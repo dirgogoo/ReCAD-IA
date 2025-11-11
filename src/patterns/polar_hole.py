@@ -149,10 +149,6 @@ class PolarHolePattern(GeometricPattern):
         count = len(points)
         return (x_sum / count, y_sum / count)
 
-    def _distance(self, p1: Tuple[float, float], p2: Tuple[float, float]) -> float:
-        """Calculate Euclidean distance between two points."""
-        return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
-
     def _angle_from_center(self, center: Tuple[float, float], point: Tuple[float, float]) -> float:
         """Calculate angle in degrees from center to point (0° = +X axis)."""
         dx = point[0] - center[0]
