@@ -208,28 +208,6 @@ class CountersinkPattern(GeometricPattern):
                 return True
         return False
 
-    def _extract_value(self, obj: Any) -> Optional[float]:
-        """Extract numeric value from dict or return as-is."""
-        if isinstance(obj, dict):
-            return obj.get("value")
-        return obj
-
-    def _extract_center(self, feature: Dict) -> tuple:
-        """Extract center coordinates from feature."""
-        center_obj = feature.get("geometry", {}).get("center", {"x": 0, "y": 0})
-        return (center_obj.get("x", 0), center_obj.get("y", 0))
-
-    def _extract_depth(self, feature: Dict) -> Optional[float]:
-        """Extract depth from Cut feature."""
-        params = feature.get("parameters", {})
-        # Could be "depth" (for chamfer) or "distance" (for circle)
-        depth = params.get("depth") or params.get("distance")
-        return self._extract_value(depth)
-
-    def _distance(self, p1: tuple, p2: tuple) -> float:
-        """Calculate Euclidean distance between two points."""
-        return math.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
-
     def _has_countersink_cues(self, transcription: str) -> bool:
         """Check if audio mentions countersink."""
         keywords = [
