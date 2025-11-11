@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-07_154505",
+  "status": "success",
+  "processing_time_seconds": 899.070935,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-07 at 15.44.00.mp4",
+    "size_mb": 5.4962663650512695,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "Espacador_BTP_75x30x12",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-07_154505\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-07_154505"
+  }
+}

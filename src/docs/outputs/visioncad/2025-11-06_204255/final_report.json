@@ -1,0 +1,52 @@
+{
+  "session_id": "2025-11-06_204255",
+  "video_file": "WhatsApp Video 2025-11-06 at 16.36.07.mp4",
+  "timestamp": "2025-11-06T20:51:17.680750",
+  "phases": {
+    "phase_0_setup": "OK",
+    "phase_1_extraction": {
+      "frames_extracted": 89,
+      "fps": 1.5,
+      "audio_transcription": "Chapa de di\u00e2metro 90mm Raio de 45mm e 2 linhas a dist\u00e2ncia de 78mm"
+    },
+    "phase_2_analysis": {
+      "agents_dispatched": 5,
+      "total_frames_analyzed": 89,
+      "average_confidence": 0.93
+    },
+    "phase_3_aggregation": {
+      "geometry_detected": "Circle with bilateral chord cuts",
+      "base_shape": "Circle 90mm diameter",
+      "height": "5.5mm",
+      "cuts": 2,
+      "cut_type": "Symmetric chord cuts creating 78mm flat-to-flat distance"
+    },
+    "phase_4_5_cad_export": {
+      "format": "FreeCAD (.FCStd)",
+      "output_file": "chapa_circle_90mm.FCStd",
+      "base_volume_mm3": 34989.49,
+      "final_volume_mm3": 30739.2,
+      "material_removed_mm3": 4250.29,
+      "reduction_percent": 12.1,
+      "validation": "OK - Chord cuts successfully applied"
+    }
+  },
+  "outputs": {
+    "semantic_json": "semantic.json",
+    "cad_model": "chapa_circle_90mm.FCStd",
+    "frames_directory": "frames/",
+    "agent_results": "agent_results.json"
+  },
+  "summary": {
+    "part_name": "chapa_circle_90mm_chord_cut",
+    "geometry": "Circular disk (90mm dia \u00d7 5.5mm thick) with two symmetric chord cuts",
+    "dimensions": {
+      "diameter": "90mm",
+      "thickness": "5.5mm",
+      "flat_to_flat_distance": "78mm",
+      "chord_cut_depth": "~6mm per side"
+    },
+    "confidence": 0.93,
+    "status": "SUCCESS"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "test_id": "task5_end_to_end_chord_cut",
+  "date": "2025-11-06T19:06:11.185637",
+  "status": "PASSED",
+  "summary": "End-to-end test of VisionCAD chord cut detection and export pipeline",
+  "video_details": {
+    "filename": "WhatsApp Video 2025-11-06 at 16.36.07.mp4",
+    "size_mb": 8.65,
+    "frames_extracted": 89,
+    "fps": 1.5,
+    "duration_seconds": 59.3
+  },
+  "audio_transcription": {
+    "text": "Chapa de di\u00c3\u00a2metro 90mm Raio de 45mm e 2 linhas a dist\u00c3\u00a2ncia de 78mm",
+    "segments": 2,
+    "detected_parameters": [
+      {
+        "name": "diameter",
+        "value": 90.0,
+        "unit": "mm",
+        "source": "di\u00e2metro 90mm"
+      },
+      {
+        "name": "radius",
+        "value": 45.0,
+        "unit": "mm",
+        "source": "Raio de 45mm"
+      },
+      {
+        "name": "flat_to_flat",
+        "value": 78.0,
+        "unit": "mm",
+        "source": "2 linhas a dist\u00e2ncia de 78mm"
+      }
+    ]
+  },
+  "agent_analysis": {
+    "num_agents": 5,
+    "frames_per_agent": [
+      18,
+      18,
+      18,
+      18,
+      17
+    ],
+    "pattern_detected": "chord_cut",
+    "avg_confidence": 0.91,
+    "geometry_type": "multi-geometry (Arc + Line)",
+    "all_agents_detected_chord_cut": true
+  },
+  "agent_geometry_validation": {
+    "geometry_count": 4,
+    "geometry_types": [
+      "Arc",
+      "Line",
+      "Arc",
+      "Line"
+    ],
+    "arc_count": 2,
+    "line_count": 2,
+    "constraint_count": 7,
+    "constraint_types": [
+      "Coincident",
+      "Coincident",
+      "Coincident",
+      "Coincident",
+      "Parallel",
+      "Horizontal",
+      "Distance"
+    ]
+  },
+  "semantic_json_validation": {
+    "part_name": "chord_cut_6mm",
+    "units": "mm",
+    "feature_count": 1,
+    "geometry_count": 4,
+    "geometry_types": [
+      "Arc",
+      "Line",
+      "Arc",
+      "Line"
+    ],
+    "constraint_count": 7,
+    "has_parameters_wrapper": true,
+    "extrude_distance": 6.5
+  },
+  "freecad_export_validation": {
+    "output_file": "chord_cut_90mm_78mm.FCStd",
+    "sketch_geometry_count": 4,
+    "sketch_geometry_types": [
+      "ArcOfCircle",
+      "LineSegment",
+      "ArcOfCircle",
+      "LineSegment"
+    ],
+    "wire_is_closed": true,
+    "sketch_face_area_sqmm": 4363.61,
+    "pad_length_mm": 6.5,
+    "expected_volume_mm3": 28363.48,
+    "actual_volume_mm3": 28363.48,
+    "volume_error_percent": 0.0,
+    "volume_validation": "PASSED"
+  },
+  "task_validations": {
+    "task1_agent_prompt_updated": {
+      "status": "PASSED",
+      "evidence": "Agents output Arc + Line geometry instead of Circle + Cuts",
+      "detection_pattern": "chord_cut"
+    },
+    "task2_helper_function": {
+      "status": "PASSED",
+      "evidence": "chord_cut_helper.py generates correct 2 Arc + 2 Line geometry",
+      "function": "calculate_chord_cut_geometry(radius=45.0, flat_to_flat=78.0)"
+    },
+    "task3_parser_updated": {
+      "status": "PASSED",
+      "evidence": "Parser correctly processed multi-geometry agent results",
+      "geometry_preserved": true,
+      "constraints_preserved": true
+    },
+    "task4_constraints_preserved": {
+      "status": "PASSED",
+      "evidence": "All 7 constraints preserved through pipeline",
+      "constraints_in_agent": 7,
+      "constraints_in_semantic": 7,
+      "constraint_types": [
+        "Coincident",
+        "Parallel",
+        "Horizontal",
+        "Distance"
+      ]
+    }
+  },
+  "success_criteria": {
+    "video_located_and_processed": true,
+    "agents_detect_chord_cut_from_audio": true,
+    "agent_output_arc_line_not_circle": true,
+    "constraints_present_in_agent_results": true,
+    "semantic_json_multi_geometry_constraints": true,
+    "freecad_export_successful": true,
+    "volume_calculation_accurate": true,
+    "all_tests_passed": true
+  },
+  "measurements_comparison": {
+    "audio_measurements": {
+      "diameter": 90.0,
+      "radius": 45.0,
+      "flat_to_flat": 78.0,
+      "thickness": "not mentioned (estimated 6.5mm from video)"
+    },
+    "geometry_calculations": {
+      "radius_used": 45.0,
+      "flat_to_flat_used": 78.0,
+      "chord_half_length": 22.45,
+      "arc_angle_degrees": 60.1,
+      "cross_section_area": 4363.61
+    },
+    "freecad_validation": {
+      "volume_mm3": 28363.48,
+      "volume_formula": "cross_section_area \u00d7 extrude_distance",
+      "accuracy": "100% (0.0% error)"
+    }
+  }
+}

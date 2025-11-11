@@ -1,0 +1,111 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "diameter_mm": 90,
+      "radius_mm": 45
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "parallel_grooves",
+        "description": "Two parallel linear grooves machined into the top surface of the circular plate",
+        "count": 2,
+        "spacing_mm": 78,
+        "orientation": "parallel linear features across the plate diameter",
+        "confidence": 0.9
+      }
+    ],
+    "thickness_mm": 15.0,
+    "measurements_source": "Direct caliper measurements visible in frames 6-17 showing Mitutoyo digital caliper measuring 90mm diameter. Two parallel grooves clearly visible on the white plate surface. Thickness estimated from side profile views during caliper positioning.",
+    "notes": "The part is a circular plate (90mm diameter, 45mm radius) with two parallel grooves machined into the top surface. The grooves are positioned 78mm apart (likely center-to-center spacing as mentioned in audio). Material appears to be white plastic or painted metal. Caliper measurements confirm the 90mm diameter specification. The plate has substantial thickness (estimated ~15mm from side views)."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "diameter_mm": 90,
+      "radius_mm": 45
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "parallel_lines",
+        "description": "Two parallel linear surface features (grooves or markings) running across the circular plate",
+        "spacing_mm": 78,
+        "confidence": 0.75
+      }
+    ],
+    "thickness_mm": 4.0,
+    "measurements_source": "Mitutoyo digital caliper measuring outer diameter across multiple frames (18-35). Diameter measurement clearly visible at approximately 90mm on caliper scale. Two parallel linear features visible on plate surface, consistent with audio description of '2 linhas a distância de 78mm'.",
+    "notes": "The circular plate is made of light-colored metal (likely aluminum). The caliper measurements are consistent across all frames showing diameter measurement. The two linear features mentioned in the audio are visible as surface marks running parallel across the plate. Thickness estimated from edge profile views at approximately 4mm, though direct thickness measurement would provide more accuracy. The part geometry is simple: a flat circular disc with two parallel surface features spaced 78mm apart."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "diameter_mm": 90,
+      "radius_mm": 45
+    },
+    "confidence": 0.85,
+    "additional_features": [
+      {
+        "type": "linear_features_not_visible",
+        "description": "2 lines at 78mm spacing mentioned in audio but not visible in this batch",
+        "spacing_mm": 78,
+        "confidence": 0.0
+      }
+    ],
+    "thickness_mm": 5.0,
+    "measurements_source": "Mitutoyo digital caliper measuring diameter across the circular plate. Caliper positioned to measure ~90mm diameter. Part thickness estimated at approximately 5mm based on visual proportions.",
+    "notes": "Frames show diameter measurement in progress. The circular base geometry is clearly visible and matches audio specification of 90mm diameter. The 2 linear features mentioned in audio (at 78mm spacing) are not visible in this batch - they may be on the reverse side, in a different orientation, or will be shown in subsequent frames. Part appears to be white/light gray metal or plastic material with smooth top surface."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "diameter_mm": 90,
+      "radius_mm": 45
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "unknown_linear_features",
+        "description": "2 lines mentioned in audio at 78mm spacing - not visible in this batch",
+        "spacing_mm": 78,
+        "confidence": 0.0
+      }
+    ],
+    "thickness_mm": 5.5,
+    "measurements_source": "Mitutoyo caliper measurements observed in frames 54-64 (diameter) and frames 68-71 (thickness). Diameter measurement confirms audio specification of 90mm. Thickness estimated at 5-5.5mm based on caliper jaw opening in edge measurement.",
+    "notes": "Circular metal plate with 90mm diameter confirmed by caliper measurement. Thickness measured at approximately 5-6mm. The '2 lines at 78mm distance' mentioned in audio transcription are not visible on the top surface in these frames - they may be on the bottom surface, be very shallow features, or be shown in other batches. The plate appears to be a simple circular disc without visible grooves or slots from this viewing angle."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "diameter_mm": 90,
+      "radius_mm": 45
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "parallel_flats",
+        "description": "Two parallel milled surfaces on opposite sides of the circular plate, creating chord-like flat edges",
+        "spacing_mm": 78,
+        "confidence": 0.9,
+        "feature_count": 2,
+        "orientation": "parallel to each other, perpendicular to diameter measurement axis"
+      }
+    ],
+    "thickness_mm": 5.0,
+    "measurements_source": "Visual analysis from Mitutoyo caliper measurements across frames 72-88. Caliper shows diameter measurement of circular plate. The two parallel flat surfaces ('2 linhas') are clearly visible as chords cutting the circular perimeter, with the 78mm dimension representing the distance between these parallel flats.",
+    "notes": "This is a circular plate with two parallel flat surfaces machined on opposite sides. The base circle has a 90mm diameter (45mm radius), and the two parallel flats are positioned 78mm apart. This geometry is commonly used for alignment features or to prevent rotation. The part shows professional machining with clean edges and uniform material removal. Thickness estimated at approximately 5mm based on visual proportion in frames."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "text": "Diâmetro externo, 75 milímetros, diâmetro interno, 30 milímetros. Furo rebaixo, 15 milímetros, centro de furação, centro de furação de 50 milímetros, tamanho do furo, 9 milímetros, 3 furos, centro de furação de 50 milímetros. Um rebaixo de profundidade de 9 milímetros e diâmetro do rebaixo de 15 milímetros.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 14.0,
+      "text": " Diâmetro externo, 75 milímetros, diâmetro interno, 30 milímetros."
+    },
+    {
+      "start": 14.0,
+      "end": 43.0,
+      "text": " Furo rebaixo, 15 milímetros, centro de furação, centro de furação de 50 milímetros,"
+    },
+    {
+      "start": 44.0,
+      "end": 61.0,
+      "text": " tamanho do furo, 9 milímetros, 3 furos, centro de furação de 50 milímetros."
+    },
+    {
+      "start": 61.0,
+      "end": 74.0,
+      "text": " Um rebaixo de profundidade de 9 milímetros e diâmetro do rebaixo de 15 milímetros."
+    }
+  ]
+}

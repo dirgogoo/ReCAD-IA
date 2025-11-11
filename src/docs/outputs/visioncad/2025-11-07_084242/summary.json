@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-07_084242",
+  "status": "success",
+  "processing_time_seconds": 384.230831,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-06 at 16.36.07.mp4",
+    "size_mb": 8.645464897155762,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "chapa_circle_90mm",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-07_084242\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-07_084242"
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 11,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75.0,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "Cut",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 30.0
+        },
+        "operation": "inner_hole",
+        "confidence": 0.95
+      }
+    ],
+    "extrusion": {
+      "distance": 12.0,
+      "confidence": 0.9
+    },
+    "measurement_source": "audio + visual correlation with calipers",
+    "notes": "Frames 0-7 show top view of metallic hollow cylinder spacer. Frames 8-10 show caliper measurements being taken. Part appears to be machined aluminum with concentric inner and outer circles. Visual confirmation of cylindrical geometry matches audio specifications exactly."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 11,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75.0,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "Cut",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 30.0
+        },
+        "operation": "inner_hole",
+        "confidence": 0.95
+      }
+    ],
+    "extrusion": {
+      "distance": 12.0,
+      "confidence": 0.9
+    },
+    "measurement_source": "audio + visual correlation with caliper measurements",
+    "notes": "Frames 11-15 show Mitutoyo caliper measuring outer diameter (~75mm). Frame 16 shows side profile with caliper measuring thickness. Frames 17-18 show top-down view of hollow cylinder. Frames 19-21 show caliper measuring inner diameter (~30mm). Part is metallic (aluminum/steel), machined finish, consistent wall thickness. Clear hollow cylinder/spacer geometry confirmed."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 11,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75.0,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "Cut",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 30.0
+        },
+        "operation": "inner_hole",
+        "confidence": 0.95
+      }
+    ],
+    "extrusion": {
+      "distance": 12.0,
+      "confidence": 0.9
+    },
+    "measurement_source": "audio + visual correlation with Mitutoyo caliper measurements",
+    "notes": "Frames 22-24 show top view of hollow cylinder with measuring tool. Frames 25-27 show Mitutoyo caliper measuring outer diameter (visible scale shows ~75mm range). Frames 28-32 show caliper measuring thickness/height of the part. Part is white/light colored metal, consistent hollow cylinder geometry with central hole clearly visible throughout all frames."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 11,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75.0,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "Cut",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 30.0
+        },
+        "operation": "inner_hole",
+        "confidence": 0.95
+      }
+    ],
+    "extrusion": {
+      "distance": 12.0,
+      "confidence": 0.9
+    },
+    "measurement_source": "audio + visual correlation with caliper measurements",
+    "notes": "Frames show hollow cylindrical spacer (Espaçador BTP) measured with digital caliper. Frames 33-39 show caliper measuring outer diameter and thickness. Frame 39 clearly shows metallic hollow cylinder with visible inner hole. Frames 33-36 show measurement process with caliper jaws around the part's outer diameter. Part appears to be dark metallic (possibly steel or bronze). Visual confirmation of circular cross-section with central hole matches audio transcription perfectly: OD 75mm, ID 30mm, thickness 12mm."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 13,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75.0,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "Cut",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 30.0
+        },
+        "operation": "inner_hole",
+        "confidence": 0.95
+      }
+    ],
+    "extrusion": {
+      "distance": 12.0,
+      "confidence": 0.9
+    },
+    "measurement_source": "visual caliper measurement + audio correlation",
+    "notes": "Frames 44-47 show side profile with caliper measuring outer diameter. Frames 48-52 show caliper positioning from different angles. Frames 53-56 show top view clearly displaying hollow cylinder geometry with centered through-hole. Metallic finish visible, consistent with spacer/washer design. All measurements correlate with audio transcription: OD=75mm, ID=30mm, thickness=12mm."
+  }
+]

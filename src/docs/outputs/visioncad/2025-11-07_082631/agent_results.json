@@ -1,0 +1,237 @@
+[
+  {
+    "agent_id": "visual_agent_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylindrical body with 90mm diameter confirmed by multiple caliper measurements in frames 7-17. Audio mentions 'diâmetro 90mm' and 'Raio de 45mm' (radius 45mm). Height appears approximately 27mm based on visual proportions."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "left_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "constraint": {
+          "type": "distance_from_axis",
+          "value": 39,
+          "description": "Vertical distance from cylinder center axis to flat cut surface"
+        },
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut visible on left side. Top views (frames 0-6, 14-17) show two parallel flat sides on the circular cross-section. Audio mentions '2 linhas a distância de 78mm', indicating 78mm separation between the two flat sides. Cut depth calculated to leave 78mm between parallel surfaces."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "right_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "constraint": {
+          "type": "distance_from_axis",
+          "value": 39,
+          "description": "Vertical distance from cylinder center axis to flat cut surface"
+        },
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut visible on right side, symmetric to left cut. The 78mm dimension mentioned in audio represents the distance between these two parallel flat surfaces. Both cuts are equidistant from center axis at 39mm, creating parallel flat sides."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "This is a cylindrical plate (chapa) with 90mm diameter and approximately 27mm height, featuring two symmetric bilateral chord cuts creating parallel flat sides. The audio describes 'Chapa de diâmetro 90mm Raio de 45mm e 2 linhas a distância de 78mm' - confirming 90mm diameter (45mm radius) and two parallel lines (flat surfaces) separated by 78mm. The top view clearly shows a circular profile with two parallel flat segments on opposite sides. Caliper measurements in frames 7-17 confirm the 90mm diameter. The geometry matches a cylinder with bilateral symmetrical chord cuts, where material is removed from both sides to create two parallel flat surfaces 78mm apart."
+  },
+  {
+    "agent_id": "visual_agent_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylinder clearly visible with 90mm diameter measured by caliper across multiple frames. Height appears consistent at approximately 27mm based on part proportions and typical sheet metal thickness standards."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "left_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 27,
+          "height": 90
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Left flat side clearly visible in top view. The cut creates a vertical flat surface parallel to the cylinder axis. Distance between the two parallel flat sides measures 78mm (audio: '2 linhas a distância de 78mm'), meaning each cut removes approximately 6mm from the 90mm diameter cylinder ((90-78)/2 = 6mm per side)."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "right_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 27,
+          "height": 90
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Right flat side clearly visible in top view, symmetric to left cut. Creates bilateral chord cuts with 78mm distance between flat surfaces. Each cut removes 6mm depth from the original 90mm diameter cylinder, creating the characteristic 'two lines' geometry mentioned in audio."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Cylindrical plate (chapa) with 90mm diameter base and two bilateral parallel chord cuts. The caliper clearly shows the part has flat sides on left and right, reducing the width to 78mm between the two parallel flat surfaces ('2 linhas a distância de 78mm'). This is a classic bilateral chord cut geometry where a cylinder has material removed from two opposite sides, creating two parallel flat faces. The top view consistently shows the characteristic shape: curved segments on top and bottom with straight parallel sides. Height is approximately 27mm based on proportions visible across frames."
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylinder clearly visible with 90mm diameter measured by caliper across multiple frames. Audio confirms 'Chapa de diâmetro 90mm'. Height approximately 27mm based on side profile views."
+      },
+      {
+        "type": "Cut",
+        "operation": "cut",
+        "position": "left_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cuts clearly visible in top view - part shows two parallel flat sides on circular base. Caliper measurements show width between flat sides is 78mm (audio confirms 'distância de 78mm'). With 90mm diameter and 78mm chord distance, cut depth is approximately 6mm per side. Vertical edges visible in frames 36-53 confirm through-cuts."
+      },
+      {
+        "type": "Cut",
+        "operation": "cut",
+        "position": "right_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Mirror cut on opposite side creating symmetrical bilateral chord cuts. Same geometry as left cut - removes material to create flat side. Distance between the two flat parallel sides measures 78mm as confirmed by audio transcription and visual caliper measurements."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Cylindrical mechanical part (90mm diameter, ~27mm height) with bilateral parallel chord cuts. The cuts create two flat sides with 78mm separation distance. Audio transcription confirms key dimensions: 'diâmetro 90mm' (diameter), 'Raio de 45mm' (radius = 45mm, confirming 90mm diameter), and '2 linhas a distância de 78mm' (2 lines at 78mm distance - referring to the parallel flat sides). Top view clearly shows circular profile with two straight parallel segments. Caliper measurements throughout frames confirm 90mm diameter and 78mm chord distance. Cut depth calculated as approximately 6mm per side based on chord geometry."
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylindrical body with 90mm diameter clearly visible in caliper measurements across multiple frames (54-62). Height approximately 27mm measured from side profile views."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "left_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut visible in top views (frames 62-71). The circular profile shows two parallel flat edges. Audio confirms '2 linhas a distância de 78mm' - the distance between the two parallel cuts is 78mm, meaning each cut removes approximately 6mm from the 90mm diameter cylinder."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "right_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "confidence": 0.92,
+        "reasoning": "Second bilateral chord cut symmetrically opposite to the first cut. Creates parallel flat surfaces 78mm apart. Top view (frames 62-71) clearly shows the D-shape profile with two flat sides, confirming material removal from both sides of the cylinder."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "This is a cylindrical plate (chapa) with 90mm diameter and 27mm height, featuring bilateral parallel chord cuts. The top views clearly show a circle with two flat sides cut parallel to each other. The distance between these flat surfaces is 78mm as mentioned in the audio. This creates a symmetric double-D profile. The caliper measurements in frames 54-62 confirm the 90mm base diameter, while frames 62-71 show the characteristic flat-sided profile from the top view, and frames 65-71 show the part from various angles confirming the cuts extend through the full height of the cylinder."
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylinder with 90mm diameter clearly visible in top view and confirmed by audio transcription. Height of approximately 27mm measured from side profile views."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "left_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 27,
+          "height": 30
+        },
+        "distance": 6,
+        "confidence": 0.90,
+        "reasoning": "Left-side chord cut creating flat surface. Caliper measurements show 78mm between parallel flats. With 90mm diameter, each side cut removes approximately 6mm depth. Cut height matches part thickness (27mm), width extends beyond visible geometry (30mm approximation)."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove_material",
+        "position": "right_side",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 27,
+          "height": 30
+        },
+        "distance": 6,
+        "confidence": 0.90,
+        "reasoning": "Right-side chord cut creating parallel flat surface opposite to left cut. Audio confirms '2 linhas a distância de 78mm' (2 lines at 78mm distance). Symmetric bilateral chord cut pattern clearly visible in top view frames 72-88."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "Cylindrical part with bilateral chord cuts (two parallel flat sides). Base is 90mm diameter cylinder, 27mm height. Two vertical cuts on opposite sides create parallel flat surfaces separated by 78mm, with each cut removing approximately 6mm of material depth from the cylinder. This is a common machining pattern for parts requiring flat mounting surfaces while maintaining circular geometry."
+  }
+]

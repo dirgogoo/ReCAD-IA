@@ -1,0 +1,19 @@
+[
+  {
+    "agent_id": "agent_1",
+    "frames_analyzed": 10,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90.0
+        },
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.95
+      }
+    ],
+    "overall_confidence": 0.95
+  }
+]

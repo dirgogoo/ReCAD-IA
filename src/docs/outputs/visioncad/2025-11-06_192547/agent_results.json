@@ -1,0 +1,119 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      }
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "cut",
+        "description": "Two parallel chord cuts on opposite sides of the circular disc",
+        "dimensions": {
+          "distance_between_chords": 78,
+          "chord_orientation": "parallel",
+          "chord_count": 2
+        },
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      }
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "cut",
+        "description": "Two parallel chord cuts creating flat edges",
+        "dimensions": {
+          "chord_separation_distance": 78
+        },
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      }
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "chord_cut",
+        "description": "Two parallel chord cuts",
+        "dimensions": {
+          "chord_distance": 78
+        },
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      }
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "cut",
+        "description": "Two parallel chord cuts",
+        "dimensions": {
+          "distance_between_cuts": 78
+        },
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      }
+    },
+    "confidence": 0.95,
+    "additional_features": [
+      {
+        "type": "chord_cuts",
+        "description": "Two parallel chord cuts",
+        "dimensions": {
+          "chord_distance": 78
+        },
+        "confidence": 0.9
+      }
+    ]
+  }
+]

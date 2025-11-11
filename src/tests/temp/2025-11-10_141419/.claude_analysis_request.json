@@ -1,0 +1,28 @@
+{
+  "status": "pending",
+  "task": "analyze_and_generate_partbuilder_code",
+  "agent_results": [
+    {
+      "agent_id": "agent_1",
+      "frames_analyzed": 10,
+      "features": [
+        {
+          "type": "Extrude",
+          "geometry": {
+            "type": "Circle",
+            "diameter": 90.0
+          },
+          "distance": 6.5,
+          "operation": "new_body",
+          "confidence": 0.95
+        }
+      ],
+      "overall_confidence": 0.95
+    }
+  ],
+  "transcription": null,
+  "output_file": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\2025-11-10_141419\\claude_analysis.py",
+  "instructions_file": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\patterns\\claude_analyzer.py",
+  "instructions_summary": "READ the instructions_file for complete details!\nThat file contains:\n  - Analysis steps\n  - PartBuilder API examples\n  - Critical rules (import from semantic_builder!)\n  - Example code with correct sys.path (5 parents)\n",
+  "detected_pattern": "circle_extrude"
+}

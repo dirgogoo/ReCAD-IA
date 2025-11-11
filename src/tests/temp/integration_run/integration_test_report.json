@@ -1,0 +1,60 @@
+{
+  "timestamp": "2025-11-06T19:19:51.149794",
+  "test_configuration": {
+    "video": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-06 at 16.36.07.mp4",
+    "fps": 1.5,
+    "enhanced_prompt": "Task 6 (250 lines with worked examples)"
+  },
+  "component_tests": {
+    "frame_extraction": {
+      "status": "PASS",
+      "frames": 89,
+      "time_s": 3.7
+    },
+    "audio_transcription": {
+      "status": "PASS",
+      "chars": 66,
+      "time_s": 9.38
+    },
+    "agent_analysis": {
+      "status": "PASS",
+      "pattern": "chord_cut",
+      "geometry_count": 4,
+      "constraint_count": 7,
+      "confidence": 0.95,
+      "time_s": 11.95,
+      "agent_results_path": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\integration_run\\2025-11-06_191920\\agent_results.json"
+    },
+    "parser": {
+      "status": "PASS",
+      "features": 1,
+      "geometry_count": 4,
+      "constraint_count": 7,
+      "data_loss": 0,
+      "time_s": 0.01
+    },
+    "semantic_json_builder": {
+      "status": "PASS",
+      "geometry_count": 4,
+      "constraint_count": 7,
+      "semantic_path": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\integration_run\\2025-11-06_191932\\semantic.json",
+      "time_s": 1.41
+    },
+    "freecad_export": {
+      "status": "SKIP",
+      "reason": "semantic-geometry not installed"
+    }
+  },
+  "integration_test": {
+    "status": "PASS",
+    "total_time_s": 17.13,
+    "confidence": 0.95,
+    "semantic_path": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\integration_run\\e2e_test\\2025-11-06_191934\\semantic.json"
+  },
+  "summary": {
+    "total_tests": 7,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 1
+  }
+}

@@ -1,0 +1,73 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45
+      },
+      "confidence": 0.90
+    },
+    "measurements_source": "Paquímetro Mitutoyo visível nos frames 0008 e 0016 medindo diâmetro próximo a 90mm, correlacionado com transcrição de áudio 'diâmetro 90mm, raio de 45mm'. Régua no frame 0012 mostra medida de 78mm para a seção retangular superior.",
+    "notes": "Peça cilíndrica com topo modificado contendo seção retangular plana. As '2 linhas a distância de 78mm' referem-se à largura da seção retangular no topo. Espessura/altura da peça não claramente mensurável nestes frames iniciais."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45
+      },
+      "confidence": 0.92
+    },
+    "measurements_source": "Paquímetro Mitutoyo visível nos frames 0017, 0021, 0033 medindo diâmetro da peça circular. Leitura do paquímetro confirma aproximadamente 90mm. Correlaciona com transcrição de áudio que menciona 'diâmetro 90mm, raio 45mm'",
+    "notes": "Peça circular clara, medição precisa com paquímetro digital. Espessura não visível neste batch (peça vista frontalmente). Geometria base confirmada como círculo com alto grau de confiança."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 8
+      },
+      "confidence": 0.92
+    },
+    "measurements_source": "Paquímetro Mitutoyo visível nos frames 0034, 0046, 0050 medindo diâmetro da peça circular. Espessura estimada visualmente pela proporção lateral da peça nos frames 0042-0046.",
+    "notes": "Peça circular branca/bege, formato cilíndrico achatado (disco). Medição clara do diâmetro externo com paquímetro digital. Áudio menciona '2 linhas a distância de 78mm' que pode referir-se a furos ou marcações não visíveis neste batch de frames."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Paquímetro Mitutoyo digital visível nos frames 0051-0063 medindo diâmetro da peça. Leitura visual do instrumento mostra aproximadamente 90mm, confirmado pela transcrição de áudio.",
+    "notes": "Peça cilíndrica branca com geometria circular clara. Múltiplos frames mostram medição direta com paquímetro digital de precisão. Frame 0067 mostra peça completa sem instrumento. Alta confiança nas dimensões devido à medição direta com instrumento calibrado."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 21,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Dimensões extraídas da transcrição de áudio confirmadas visualmente pela forma circular da peça nos frames 0068, 0073, 0078, 0083 e 0088. Paquímetro visível nos frames 0068, 0073 e 0078 medindo o diâmetro da peça cilíndrica.",
+    "notes": "Peça circular branca (possivelmente plástico ou nylon) com diâmetro de 90mm e raio de 45mm conforme áudio. Frames mostram medição com paquímetro digital. A menção de '2 linhas a distância de 78mm' na transcrição pode referir-se a furos ou marcações não claramente visíveis neste batch de frames."
+  }
+]

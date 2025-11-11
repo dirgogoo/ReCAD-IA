@@ -1,0 +1,102 @@
+[
+  {
+    "agent_id": "batch_0",
+    "frames_analyzed": 11,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 126,
+          "height": 126
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Audio transcription explicitly states Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura"
+      }
+    ],
+    "overall_confidence": 0.95,
+    "notes": "Simple rectangular plate with no additional features detected"
+  },
+  {
+    "agent_id": "batch_1",
+    "frames_analyzed": 11,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 126,
+          "height": 126
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Audio and visual caliper measurements confirm 126mm x 126mm x 5mm"
+      }
+    ],
+    "overall_confidence": 0.95,
+    "notes": "Caliper measurements visible showing 126mm dimensions"
+  },
+  {
+    "agent_id": "batch_2",
+    "frames_analyzed": 11,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 126,
+          "height": 126
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Digital caliper measurements and audio confirm dimensions"
+      }
+    ],
+    "overall_confidence": 0.95,
+    "notes": "Simple square plate, no additional features"
+  },
+  {
+    "agent_id": "batch_3",
+    "frames_analyzed": 11,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 126,
+          "height": 126
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Thickness measurement visible on caliper (5mm)"
+      }
+    ],
+    "overall_confidence": 0.95,
+    "notes": "Thickness measurements confirm 5mm"
+  },
+  {
+    "agent_id": "batch_4",
+    "frames_analyzed": 12,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 126,
+          "height": 126
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Mitutoyo caliper confirms dimensions, clear top-down view"
+      }
+    ],
+    "overall_confidence": 0.95,
+    "notes": "Pure rectangular extrusion, no secondary features"
+  }
+]

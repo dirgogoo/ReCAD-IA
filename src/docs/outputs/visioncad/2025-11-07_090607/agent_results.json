@@ -1,0 +1,210 @@
+[
+  {
+    "agent_id": "visual_agent_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.92,
+        "reasoning": "Base circular cylinder clearly visible in top views (frames 0-6, 12-17). Diameter confirmed as 90mm from audio transcription and caliper measurements showing full circular profile."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "ChordCut",
+          "chord_distance": 78,
+          "parent_diameter": 90
+        },
+        "distance": 27,
+        "position": "bilateral",
+        "confidence": 0.88,
+        "reasoning": "Top views show flat parallel sides on circular base. Audio mentions '2 linhas a distância de 78mm' (2 lines at 78mm distance). Caliper measurements in frames 6-11, 15-17 show width between flat sides is 78mm. Cut depth per side = (90-78)/2 = 6mm. Both sides cut symmetrically through full height of cylinder (27mm)."
+      }
+    ],
+    "overall_confidence": 0.90,
+    "notes": "Cylindrical part with bilateral chord cuts. Base is 90mm diameter circle extruded 27mm. Two parallel flat cuts reduce width to 78mm, creating D-shaped profile. Caliper clearly measures 78mm between flats in multiple frames. Audio transcription directly confirms: diameter 90mm, radius 45mm, and 2 lines at 78mm distance. Height appears approximately 27mm based on proportions."
+  },
+  {
+    "agent_id": "visual_agent_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.92,
+        "reasoning": "Base cylindrical disc clearly visible with Mitutoyo caliper measuring approximately 90mm diameter across multiple frames. Thickness appears to be approximately 5mm based on part proportions and standard sheet metal thickness."
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Plane",
+          "vertical_distance": 39
+        },
+        "side": "left",
+        "confidence": 0.88,
+        "reasoning": "Left side shows flat vertical edge. Audio mentions '2 linhas a distância de 78mm' (2 lines at distance 78mm). With 90mm diameter circle and 78mm between parallel cuts, vertical_distance from center = 78/2 = 39mm. Cut depth = sqrt(45^2 - 39^2) = 6mm."
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Plane",
+          "vertical_distance": 39
+        },
+        "side": "right",
+        "confidence": 0.88,
+        "reasoning": "Right side shows matching flat vertical edge. Symmetric bilateral chord cuts creating parallel flat sides 78mm apart. Both cuts at same vertical_distance (39mm from center) to achieve the 78mm spacing mentioned in audio."
+      }
+    ],
+    "overall_confidence": 0.89,
+    "notes": "Frames 18-35 show top-down views of circular disc with bilateral chord cuts measured by Mitutoyo caliper. Part is white/cream colored material. Clear evidence of two parallel flat sides on left and right. Diameter 90mm (radius 45mm) confirmed. Distance between flats is 78mm as stated in audio. Chord cuts are symmetrical, each at vertical_distance 39mm from center, removing material to create flat parallel edges."
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.92,
+        "reasoning": "Base circular cylinder clearly visible in all frames with consistent 90mm diameter measurement shown on Mitutoyo caliper"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.88,
+        "reasoning": "Left flat side visible in top view frames 36-38, vertical edge confirms material removal. Cut depth = (90-78)/2 = 6mm based on audio spec of 78mm distance between parallel lines"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.88,
+        "reasoning": "Right flat side visible in top view frames 36-38, symmetric to left cut. Audio mentions '2 linhas a distância de 78mm' indicating two parallel chord cuts creating 78mm width from 90mm diameter"
+      }
+    ],
+    "overall_confidence": 0.89,
+    "notes": "Top view frames (36-38) clearly show circular part with bilateral flat sides creating parallel edges 78mm apart. Side view frames (39-53) show consistent height of approximately 27mm. Caliper measurements confirm 90mm maximum diameter. The part is a cylinder with two symmetrical chord cuts on opposite sides, matching audio description of 'diâmetro 90mm, raio 45mm e 2 linhas a distância de 78mm'."
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylindrical shape clearly visible with 90mm diameter measured by calipers in multiple frames. Height appears approximately 27mm based on part proportions and typical flat plate dimensions."
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Top view clearly shows flat edge on left side. Distance between parallel flats = 78mm (audio). Cut depth = (90-78)/2 = 6mm from each side."
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 27
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Symmetric chord cut on opposite side. Audio mentions '2 linhas a distância de 78mm' confirming two parallel cuts creating 78mm distance between flats."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Frames 54-71 show top and perspective views of circular plate with bilateral chord cuts. Calipers measure full diameter at 90mm. The shape has two parallel flat sides 78mm apart, confirming symmetrical 6mm chord cuts on both left and right sides. Part thickness approximately 27mm. Clear correlation between visual measurements and audio transcription."
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 27,
+        "confidence": 0.95,
+        "reasoning": "Base cylindrical body clearly visible with 90mm diameter measured by caliper in multiple frames, height approximately 27mm based on proportions"
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Chord",
+          "circle_diameter": 90,
+          "distance_from_center": 39
+        },
+        "distance": 27,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Top view shows clear flat chord on left side. Caliper measures 78mm between parallel flats. Cut distance = (90-78)/2 = 6mm from edge, or 45-6 = 39mm from center"
+      },
+      {
+        "type": "ChordCut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Chord",
+          "circle_diameter": 90,
+          "distance_from_center": 39
+        },
+        "distance": 27,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Top view shows symmetric flat chord on right side, creating parallel flats 78mm apart as measured by caliper"
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Cylindrical part with diameter 90mm (radius 45mm) and two parallel chord cuts creating flat sides. Distance between flats measured at 78mm by Mitutoyo caliper. Chord cuts are symmetric, removing 6mm from each side at a distance of 39mm from center axis. Part height approximately 27mm. All measurements correlate perfectly with audio transcription."
+  }
+]

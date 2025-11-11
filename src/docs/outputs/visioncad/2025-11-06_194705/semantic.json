@@ -1,0 +1,51 @@
+{
+  "part": {
+    "name": "cylinder_90x5",
+    "units": "mm",
+    "metadata": {
+      "created_by": "semantic-geometry-builder",
+      "timestamp": "2025-11-06T22:47:05.754710Z",
+      "video_file": "test_video.mp4",
+      "frames_analyzed": 0,
+      "visual_confidence": 0.95,
+      "audio_transcription": "",
+      "created_with": "visioncad_runner.py"
+    },
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+    "features": [
+      {
+        "id": "extrude_0",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {
+            "type": "work_plane"
+          },
+          "geometry": [
+            {
+              "type": "Circle",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "diameter": {
+                "value": 90.0,
+                "unit": "mm"
+              }
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {
+            "value": 5.0,
+            "unit": "mm"
+          },
+          "direction": "normal",
+          "operation": "new_body"
+        }
+      }
+    ]
+  }
+}

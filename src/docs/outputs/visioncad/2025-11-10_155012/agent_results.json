@@ -1,0 +1,127 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 23,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75,
+      "inner_diameter": 30,
+      "thickness": null,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "counterbore_hole",
+        "hole_diameter": 9,
+        "counterbore_diameter": 15,
+        "counterbore_depth": 9,
+        "pattern": "circular",
+        "pattern_count": 3,
+        "pcd": 50,
+        "confidence": 0.9
+      }
+    ],
+    "measurements_source": "Visual measurement from frames + audio correlation",
+    "notes": "Frames show a circular flange with hollow center being measured with Mitutoyo calipers. Clearly visible: 3 counterbore holes arranged in 120-degree pattern on a circular PCD. Each counterbore has a larger diameter recess at the top and smaller through-hole at bottom. Caliper measurements visible in frames 10 and 20 confirm outer diameter approximately 75mm. Part geometry matches audio description perfectly: hollow cylinder with 3 equally-spaced counterbore holes."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 23,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75,
+      "inner_diameter": 30,
+      "thickness": null,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "counterbore_hole",
+        "hole_diameter": 9,
+        "counterbore_diameter": 15,
+        "counterbore_depth": 9,
+        "pattern": "circular",
+        "pattern_count": 3,
+        "pcd": 50,
+        "confidence": 0.9
+      }
+    ],
+    "measurements_source": "Visual measurement from frames + audio correlation",
+    "notes": "Frames show a circular flange part with visible counterbore holes. Frame 0045 shows caliper measurement being taken on the outer diameter. Part clearly shows 3 counterbore holes arranged in circular pattern around a central through-hole. Dimensions correlate perfectly with audio transcription: Ø75mm outer, Ø30mm inner hole, 3x counterbore holes Ø9mm with Ø15mm counterbore on Ø50mm PCD, depth 9mm."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 23,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75,
+      "inner_diameter": 30,
+      "thickness": null,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "counterbore_hole",
+        "hole_diameter": 9,
+        "counterbore_diameter": 15,
+        "counterbore_depth": 9,
+        "pattern": "circular",
+        "pattern_count": 3,
+        "pcd": 50,
+        "confidence": 0.9
+      }
+    ],
+    "measurements_source": "Visual measurement from frames + audio correlation",
+    "notes": "Frames show circular flange part with central hole being measured with calipers. Part has hollow center (Ø30mm inner) and outer diameter of Ø75mm. Three counterbore holes visible on the part face, arranged in circular pattern. Caliper measurements visible in frames 46-55 showing outer diameter verification. Frames 60-68 show closer views of the counterbore holes with caliper measurements of the hole features. All measurements align with audio specifications: Ø75mm outer, Ø30mm inner, 3 holes of Ø9mm with Ø15mm counterbore at 9mm depth on Ø50mm PCD."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 23,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75,
+      "inner_diameter": 30,
+      "thickness": null,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "counterbore_hole",
+        "hole_diameter": 9,
+        "counterbore_diameter": 15,
+        "counterbore_depth": 9,
+        "pattern": "circular",
+        "pattern_count": 3,
+        "pcd": 50,
+        "confidence": 0.9
+      }
+    ],
+    "measurements_source": "Visual measurement from frames + audio correlation",
+    "notes": "Frames show circular flange with central bore and 3 counterbore holes arranged in circular pattern. Calipers visible in frame 80 measuring outer diameter. Part clearly shows hollow cylinder with three evenly-spaced counterbore holes matching audio specifications."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 27,
+    "base_geometry": {
+      "type": "Circle",
+      "outer_diameter": 75,
+      "inner_diameter": 30,
+      "thickness": null,
+      "confidence": 0.95
+    },
+    "features": [
+      {
+        "type": "counterbore_hole",
+        "hole_diameter": 9,
+        "counterbore_diameter": 15,
+        "counterbore_depth": 9,
+        "pattern": "circular",
+        "pattern_count": 3,
+        "pcd": 50,
+        "confidence": 0.9
+      }
+    ],
+    "measurements_source": "Visual measurement from frames + audio correlation",
+    "notes": "Frames show circular flange with hollow center. Three counterbore holes arranged in 120° pattern clearly visible. Caliper measurements visible in frames 98 and 110 confirm dimensions. Part positioned at various angles showing top face with counterbore features. Final frames show complete part overview confirming geometry matches audio specifications."
+  }
+]

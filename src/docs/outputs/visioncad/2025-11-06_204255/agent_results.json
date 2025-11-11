@@ -1,0 +1,207 @@
+[
+  {
+    "agent_id": "visual_agent_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.92
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.93
+  },
+  {
+    "agent_id": "visual_agent_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 6,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 6,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.93
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 100,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.92
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 100,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.93
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.93
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 6,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 6,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.93
+  }
+]

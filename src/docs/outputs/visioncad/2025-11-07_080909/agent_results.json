@@ -1,0 +1,227 @@
+[
+  {
+    "agent_id": "batch_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Audio states 'diâmetro 90mm' and caliper measurements in frames 6-17 confirm 90mm diameter. Circular base shape with bilateral chord cuts visible in frames 0-5 and 12-17. Standard plate thickness estimated at 5mm based on visual proportions."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Audio mentions '2 linhas a distância de 78mm'. With max diameter 90mm and flat-to-flat distance 78mm, cut depth = (90-78)/2 = 6mm. Left-side chord cut clearly visible in frames 0-5 showing flat edge on circular part."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Bilateral symmetry confirmed - right-side chord cut matching left side. Audio '2 linhas' indicates two parallel cuts. Caliper measurements in frames 8-10 show the flat-to-flat distance measurement of 78mm, confirming 6mm cut depth on each side."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "Part is a circular plate (90mm diameter, ~5mm thick) with bilateral chord cuts creating two parallel flat sides 78mm apart. Audio transcription 'Chapa de diâmetro 90mm, raio de 45mm, e 2 linhas a distância de 78mm' perfectly matches visual measurements. Caliper clearly measures both the full 90mm diameter and the 78mm flat-to-flat distance across the chord cuts."
+  },
+  {
+    "agent_id": "batch_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Clear circular base visible in all frames with caliper measuring 90mm diameter. Audio confirms 'diâmetro 90mm' and 'raio de 45mm'."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 100,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Left chord cut visible creating flat side. Cut depth calculated as (90-78)/2 = 6mm from audio '2 linhas a distância de 78mm'."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 100,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Right chord cut visible creating parallel flat side. Bilateral symmetry with left cut, maintaining 78mm flat-to-flat distance."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "Circular disc (90mm diameter) with bilateral chord cuts creating parallel flats 78mm apart. Part thickness approximately 5mm. Audio description perfectly matches visual measurements."
+  },
+  {
+    "agent_id": "batch_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Circular base clearly visible with 90mm diameter mentioned in audio. Thickness estimated at 5mm from side profile views."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Left chord cut detected. Audio states '2 linhas a distância de 78mm'. With max diameter 90mm and flat-to-flat 78mm, cut depth is (90-78)/2 = 6mm per side."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 5
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Right chord cut detected. Mirror of left cut, creating bilateral symmetry. Both cuts result in 78mm flat-to-flat distance as measured by calipers and confirmed in audio."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Circular plate with bilateral chord cuts. Max diameter 90mm, flat-to-flat 78mm, thickness ~5mm. Two parallel cuts of 6mm depth each create the flat sides. Measurements confirmed both visually via calipers and through audio transcription."
+  },
+  {
+    "agent_id": "batch_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Circular base plate clearly visible in all frames with caliper measurements showing approximately 90mm diameter. Audio confirms 'diâmetro 90mm'. The part appears to be a flat disc with visible thickness."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cuts visible on the circular part creating flat sides. Audio mentions '2 linhas a distância de 78mm' indicating flat-to-flat distance of 78mm. With 90mm diameter, this gives (90-78)/2 = 6mm cut depth per side. Left side cut clearly visible in frames 54-71."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Matching chord cut on opposite side. Audio confirms '2 linhas' (2 lines/flats) with flat-to-flat distance of 78mm. Right side cut symmetric to left side, creating a circular part with two parallel flat edges."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Analyzed white circular disc part with bilateral chord cuts. Caliper measurements visible throughout frames showing diameter ~90mm. Part has two parallel flat sides with 78mm flat-to-flat distance, creating 6mm deep cuts on each side. Audio transcription perfectly matches visual observations: 90mm diameter circle with two flats 78mm apart. Material appears to be white plastic or similar. Thickness approximately 5mm based on side views in later frames."
+  },
+  {
+    "agent_id": "batch_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Clear circular base shape visible throughout all frames. Caliper measurements show approximately 90mm diameter matching audio transcription 'diâmetro 90mm'. Thickness estimated at ~5mm based on part proportions."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 5,
+          "height": 6
+        },
+        "distance": 6,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Bilateral chord cuts visible on circular part creating flat parallel sides. Audio confirms '2 linhas a distância de 78mm' indicating flat-to-flat distance of 78mm. With diameter 90mm, cut depth = (90-78)/2 = 6mm per side. Left side flat edge clearly visible in frames 72-82."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 5,
+          "height": 6
+        },
+        "distance": 6,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Matching chord cut on right side creating second parallel flat edge. Same geometry as left cut - 6mm depth creating the 78mm flat-to-flat distance mentioned in audio. Right side flat edge visible throughout frame sequence, particularly frames 83-88."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "White circular part with two parallel flat sides (bilateral chord cuts). Caliper measurements confirm 90mm max diameter. The '2 linhas a distância de 78mm' from audio indicates two parallel lines (flat edges) 78mm apart, which matches chord cut pattern. Part appears to be approximately 5mm thick. Geometry consistent across all 17 frames showing different viewing angles and measurement positions."
+  }
+]

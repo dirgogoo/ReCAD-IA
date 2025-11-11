@@ -1,0 +1,258 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+    "base_geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 75.0,
+        "radius": 37.5
+      },
+      "confidence": 0.95,
+      "evidence": "Circular disk clearly visible throughout frames 0-22. Caliper measuring outer diameter visible in frames 4-11, correlates with audio 'Diâmetro externo, 75 milímetros'"
+    },
+    "features": [
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 30.0
+        },
+        "position": "center",
+        "confidence": 0.95,
+        "evidence": "Central through-hole visible in all frames 0-22. Caliper measurement visible in frames 16-17, correlates with audio 'diâmetro interno, 30 milímetros'"
+      },
+      {
+        "type": "counterbore",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 15.0,
+          "depth": 9.0,
+          "hole_diameter": 9.0
+        },
+        "position": "polar_pattern",
+        "pattern": {
+          "count": 3,
+          "bolt_circle_diameter": 50.0,
+          "angular_spacing": 120.0
+        },
+        "confidence": 0.90,
+        "evidence": "Three counterbored holes visible in equidistant pattern around center in frames 0-22. Counterbore features clearly visible in frames 0-3, 8-10. Audio confirms 'Furo rebaixo, 15 milímetros, centro de furação de 50 milímetros, tamanho do furo, 9 milímetros, 3 furos, rebaixo de profundidade de 9 milímetros e diâmetro do rebaixo de 15 milímetros'"
+      }
+    ],
+    "measurements_source": "Visual calipers + audio correlation",
+    "notes": "Part is a circular flange with central hole and 3 counterbored mounting holes on 50mm bolt circle. Caliper measurements clearly visible in multiple frames confirming audio dimensions. All features are concentric. Counterbores appear to be on top surface. Part appears to be aluminum or similar machined metal."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+    "base_geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 75.0,
+        "radius": 37.5
+      },
+      "confidence": 0.95,
+      "evidence": "Circular flange visible throughout frames 23-45, caliper measurements visible in frames 30-37 and 45 showing outer diameter measurement"
+    },
+    "features": [
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 30.0
+        },
+        "position": "center",
+        "confidence": 0.95,
+        "evidence": "Central through-hole visible in all frames 23-45, matches audio transcription 'diâmetro interno, 30 milímetros'"
+      },
+      {
+        "type": "counterbore",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 15.0,
+          "hole_diameter": 9.0,
+          "depth": 9.0,
+          "count": 3,
+          "bolt_circle_diameter": 50.0
+        },
+        "position": "polar_pattern",
+        "confidence": 0.90,
+        "evidence": "Three counterbore holes visible in frames 23-45 arranged in circular pattern. Audio confirms '3 furos, centro de furação de 50 milímetros, rebaixo de 15 milímetros, furo de 9 milímetros, profundidade de 9 milímetros'"
+      }
+    ],
+    "measurements_source": "Visual calipers + audio correlation",
+    "notes": "Caliper measurements visible but difficult to read exact values due to motion blur and viewing angle in frames 30-37. Measurements confirmed by audio transcription. Part appears to be a standard circular flange with central bore and 3-hole bolt pattern. Counterbore features clearly visible with recessed pockets for bolt heads."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": [46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68],
+    "base_geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 75.0,
+        "radius": 37.5
+      },
+      "confidence": 0.95,
+      "evidence": "Circular flange clearly visible in frames 46-68, caliper measurement shown in frame 46 measuring across the outer diameter, correlates with audio transcription stating 'Diâmetro externo, 75 milímetros'"
+    },
+    "features": [
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 30.0
+        },
+        "position": "center",
+        "confidence": 0.95,
+        "evidence": "Central through-hole visible in all frames 46-68, audio confirms 'diâmetro interno, 30 milímetros'"
+      },
+      {
+        "type": "counterbore",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 15.0,
+          "depth": 9.0
+        },
+        "position": "on_holes",
+        "count": 3,
+        "confidence": 0.90,
+        "evidence": "Three counterbored holes visible in frames 46-68, audio states 'Furo rebaixo, 15 milímetros' and 'rebaixo de profundidade de 9 milímetros e diâmetro do rebaixo de 15 milímetros', counterbore pattern visible on part face"
+      },
+      {
+        "type": "hole_pattern",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "hole_diameter": 9.0,
+          "bolt_circle_diameter": 50.0,
+          "count": 3
+        },
+        "position": "radial",
+        "confidence": 0.92,
+        "evidence": "Three holes arranged in circular pattern visible in frames 46-68, audio confirms 'tamanho do furo, 9 milímetros, 3 furos, centro de furação de 50 milímetros'"
+      }
+    ],
+    "measurements_source": "Visual caliper + audio correlation",
+    "notes": "Circular flange with central hole and 3 counterbored holes on 50mm bolt circle. Caliper visible in frames 46-60 measuring the part. Part appears to be a standard mounting flange. All measurements correlate well with audio transcription. Counterbore depth of 9mm and diameter of 15mm confirmed by audio."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": [69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91],
+    "base_geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 75.0,
+        "radius": 37.5
+      },
+      "confidence": 0.95,
+      "evidence": "Circular flange clearly visible throughout frames 76-91, caliper visible in frames 77-82 measuring across the part, audio confirms 75mm external diameter"
+    },
+    "features": [
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 30.0
+        },
+        "position": "center",
+        "confidence": 0.95,
+        "evidence": "Central through-hole visible in all frames, particularly clear in frames 77-91, audio confirms 30mm internal diameter"
+      },
+      {
+        "type": "counterbore",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 15.0,
+          "depth": 9.0,
+          "hole_diameter": 9.0
+        },
+        "position": "bolt_circle_50mm_pcd",
+        "count": 3,
+        "pattern": "polar",
+        "bolt_circle_diameter": 50.0,
+        "confidence": 0.90,
+        "evidence": "Three counterbored holes visible in frames 76-91, positioned at 120-degree intervals on 50mm PCD. Audio specifies: 9mm hole diameter, 15mm counterbore diameter, 9mm counterbore depth, 50mm bolt circle center"
+      }
+    ],
+    "measurements_source": "Visual observation + audio correlation",
+    "notes": "Part is a circular flange with central hole and 3 evenly-spaced counterbored mounting holes. Caliper measurements visible in frames 77-82 but specific readings are not clearly legible due to motion blur. Dimensions extracted from audio transcription correlate with visual geometry. The counterbores are clearly visible as stepped holes in frames 77-86, showing both the larger counterbore diameter and smaller through-hole. Part appears to be machined aluminum or similar metal."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": [92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118],
+    "base_geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 75.0,
+        "radius": 37.5
+      },
+      "confidence": 0.95,
+      "evidence": "Circular flange clearly visible in frames 92-118, audio states 'Diâmetro externo, 75 milímetros'"
+    },
+    "features": [
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 30.0
+        },
+        "position": "center",
+        "confidence": 0.95,
+        "evidence": "Central through-hole visible in all frames 92-118, audio states 'diâmetro interno, 30 milímetros'"
+      },
+      {
+        "type": "counterbore",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 15.0,
+          "depth": 9.0
+        },
+        "position": "3 holes at 50mm bolt circle",
+        "pattern": "polar",
+        "pattern_count": 3,
+        "pattern_radius": 25.0,
+        "confidence": 0.90,
+        "evidence": "Three counterbored holes visible in frames 92-118, audio states 'Furo rebaixo, 15 milímetros...profundidade de 9 milímetros e diâmetro do rebaixo de 15 milímetros...3 furos, centro de furação de 50 milímetros'"
+      },
+      {
+        "type": "hole",
+        "geometry": {
+          "type": "Circle"
+        },
+        "dimensions": {
+          "diameter": 9.0
+        },
+        "position": "through holes at counterbore locations",
+        "pattern": "polar",
+        "pattern_count": 3,
+        "pattern_radius": 25.0,
+        "confidence": 0.90,
+        "evidence": "Through-holes at counterbore locations visible in frames 92-118, audio states 'tamanho do furo, 9 milímetros'"
+      }
+    ],
+    "measurements_source": "Audio transcription correlated with visual inspection",
+    "notes": "Circular flange with central 30mm hole and 3x counterbored holes (9mm through-hole, 15mm counterbore diameter, 9mm counterbore depth) on 50mm bolt circle diameter (25mm radius). No caliper measurements visible in this batch, all dimensions from audio. Part appears to be a standard mounting flange."
+  }
+]

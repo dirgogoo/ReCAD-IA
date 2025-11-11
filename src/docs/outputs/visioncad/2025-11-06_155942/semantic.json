@@ -1,0 +1,55 @@
+{
+  "part": {
+    "name": "chapa_rectangle_126x126x5",
+    "units": "mm",
+    "metadata": {
+      "created_by": "semantic-geometry-builder",
+      "timestamp": "2025-11-06T18:59:53.560165Z",
+      "video_file": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-05 at 16.47.34.mp4",
+      "frames_analyzed": 56,
+      "visual_confidence": 0.0,
+      "audio_transcription": "Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura. Obrigado por assistir.",
+      "created_with": "visioncad_runner.py"
+    },
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+    "features": [
+      {
+        "id": "extrude_base",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {
+            "type": "work_plane"
+          },
+          "geometry": [
+            {
+              "type": "Rectangle",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "width": {
+                "value": 126.0,
+                "unit": "mm"
+              },
+              "height": {
+                "value": 126.0,
+                "unit": "mm"
+              }
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {
+            "value": 5.0,
+            "unit": "mm"
+          },
+          "direction": "normal",
+          "operation": "new_body"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "text": "Diâmetro externo 50 mm Diâmetro interno 40 mm Comprimento total 16 mm Rasgo 20 mm Comprimento total 20 mm Profundidade do rasgo 7 mm 4 rasgos por iguais",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "text": " Diâmetro externo 50 mm"
+    },
+    {
+      "start": 7.0,
+      "end": 10.0,
+      "text": " Diâmetro interno 40 mm"
+    },
+    {
+      "start": 15.0,
+      "end": 18.0,
+      "text": " Comprimento total 16 mm"
+    },
+    {
+      "start": 23.0,
+      "end": 26.0,
+      "text": " Rasgo 20 mm"
+    },
+    {
+      "start": 30.0,
+      "end": 33.0,
+      "text": " Comprimento total 20 mm"
+    },
+    {
+      "start": 42.0,
+      "end": 45.0,
+      "text": " Profundidade do rasgo 7 mm"
+    },
+    {
+      "start": 51.0,
+      "end": 54.0,
+      "text": " 4 rasgos por iguais"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "session_id": "2025-11-06_161954",
+  "status": "success",
+  "processing_time_seconds": 9.815646,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-05 at 16.47.34.mp4",
+    "size_mb": 5.365938186645508,
+    "frames_analyzed": 56
+  },
+  "part": {
+    "name": "chapa_rectangle_126x126x5",
+    "geometry_type": "Rectangle",
+    "dimensions": {
+      "width": 126.0,
+      "height": 126.0,
+      "thickness": 5.0
+    },
+    "confidence": 0.0
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-06_161954\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-06_161954"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-08_135104",
+  "status": "success",
+  "processing_time_seconds": 549.831457,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-08 at 13.46.49.mp4",
+    "size_mb": 8.191116333007812,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "cilindro_tubular_50x40x16",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-08_135104\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-08_135104"
+  }
+}

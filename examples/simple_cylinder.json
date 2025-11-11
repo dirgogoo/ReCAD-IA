@@ -1,0 +1,31 @@
+{
+  "part": {
+    "name": "Simple Cylinder",
+    "units": "mm",
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+    "features": [
+      {
+        "id": "feature_1",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {"type": "work_plane"},
+          "geometry": [
+            {
+              "type": "Circle",
+              "center": {"x": 0, "y": 0},
+              "diameter": {"value": 50, "unit": "mm"}
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {"value": 100, "unit": "mm"},
+          "direction": "normal",
+          "operation": "new_body"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "part": {
+    "name": "profile_Arc_Line_6mm",
+    "units": "mm",
+    "metadata": {
+      "created_by": "semantic-geometry-builder",
+      "timestamp": "2025-11-06T21:48:40.336353Z",
+      "video_file": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\test_video.mp4",
+      "frames_analyzed": 0,
+      "visual_confidence": 0.8,
+      "audio_transcription": "",
+      "created_with": "recad_runner.py"
+    },
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+    "features": [
+      {
+        "id": "extrude_0",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {
+            "type": "work_plane"
+          },
+          "geometry": [
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": -60,
+              "end_angle": 60
+            },
+            {
+              "type": "Line",
+              "start": {
+                "x": 22,
+                "y": 39
+              },
+              "end": {
+                "x": -22,
+                "y": 39
+              }
+            },
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": 120,
+              "end_angle": -120
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {
+            "value": 6.5,
+            "unit": "mm"
+          },
+          "direction": "normal",
+          "operation": "new_body"
+        }
+      }
+    ]
+  }
+}

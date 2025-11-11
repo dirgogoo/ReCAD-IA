@@ -1,0 +1,231 @@
+[
+  {
+    "agent_id": "visual_agent_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "confidence": 0.95,
+        "reasoning": "Base circular plate clearly visible in top-down views (frames 0-6, 12-17). Audio confirms diameter 90mm and radius 45mm. Caliper measurements show diameter around 90mm."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Bilateral chord cuts detected on left side. Audio mentions 2 lines at distance of 78mm, which corresponds to the chord-to-chord distance."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Second chord cut on the opposite (right) side, creating bilateral symmetry."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "Circular disc (90mm diameter, 5mm thick) with bilateral chord cuts creating two parallel flat edges separated by 78mm."
+  },
+  {
+    "agent_id": "visual_agent_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "position": "center",
+        "confidence": 0.95,
+        "reasoning": "Base circular extrusion clearly visible. Audio confirms 90mm diameter."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut detected on left side. Audio mentions 2 lines at 78mm distance."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut detected on right side, symmetrical to left cut."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Part consists of 90mm diameter circular plate with bilateral chord cuts at 78mm chord distance."
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "position": "center",
+        "confidence": 0.95,
+        "reasoning": "Base circular extrusion visible in all frames. Caliper measurements consistently show ~90mm diameter."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Bilateral chord cut detected on left side. Top view silhouette shows clear straight edge segment."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Bilateral chord cut detected on right side, mirror of left_side cut."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "Circular disk (90mm diameter, 5mm thick) with bilateral chord cuts creating two parallel flat edges 78mm apart."
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "position": "center",
+        "confidence": 0.95,
+        "reasoning": "Silhouette is predominantly circular with diameter 90mm. Frames reveal two distinct flat vertical edges on opposite sides."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.90,
+        "reasoning": "Distinct flat vertical face on the left side. Audio mentions 2 lines at distance of 78mm."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 5
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.90,
+        "reasoning": "Opposite flat face when the part is rotated 180 degrees. Second chord cut creating bilateral symmetry."
+      }
+    ],
+    "overall_confidence": 0.92,
+    "notes": "90mm diameter cylinder with thickness 5mm that has been machined with two parallel chord cuts on opposite sides."
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "frames_analyzed": 16,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5,
+        "position": "center",
+        "confidence": 0.95,
+        "reasoning": "Base circular extrusion clearly visible. Audio states plate with 90mm diameter."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 90
+        },
+        "distance": 5,
+        "position": "left_side",
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut detected on left side. Audio mentions 2 lines at 78mm distance."
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 78,
+          "height": 90
+        },
+        "distance": 5,
+        "position": "right_side",
+        "confidence": 0.92,
+        "reasoning": "Bilateral chord cut detected on right side, symmetric to left cut."
+      }
+    ],
+    "overall_confidence": 0.93,
+    "notes": "Circular plate (90mm diameter, 5mm thick) with bilateral chord cuts creating two parallel flat edges separated by 78mm."
+  }
+]

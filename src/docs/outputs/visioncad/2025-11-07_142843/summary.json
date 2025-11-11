@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-07_142843",
+  "status": "success",
+  "processing_time_seconds": 272.287446,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-05 at 16.47.34.mp4",
+    "size_mb": 5.365938186645508,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "chapa_retangular_126x126x5",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-07_142843\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-07_142843"
+  }
+}

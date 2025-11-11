@@ -1,0 +1,1 @@
+[{"features": [{"type": "Extrude", "geometry": {"type": "Circle", "diameter": 90.0}, "distance": 5.0}], "additional_features": [{"pattern": "chord_cut", "flat_to_flat": 78.0, "confidence": 0.9}], "overall_confidence": 0.95}]

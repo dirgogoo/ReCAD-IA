@@ -1,0 +1,175 @@
+[
+  {
+    "agent_id": "visual_agent_1",
+    "batch_id": "batch_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 15.0,
+        "confidence": 0.95,
+        "agent_id": "visual_agent_1"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 15.0,
+        "confidence": 0.9,
+        "notes": "First parallel flat - chord cut on circular plate",
+        "agent_id": "visual_agent_1"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 15.0,
+        "confidence": 0.9,
+        "notes": "Second parallel flat - 78mm spacing from first cut",
+        "agent_id": "visual_agent_1"
+      }
+    ],
+    "overall_confidence": 0.92
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "batch_id": "batch_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 4.0,
+        "confidence": 0.95,
+        "agent_id": "visual_agent_2"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 4.0,
+        "confidence": 0.75,
+        "notes": "Parallel linear feature 1",
+        "agent_id": "visual_agent_2"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 4.0,
+        "confidence": 0.75,
+        "notes": "Parallel linear feature 2 - 78mm spacing",
+        "agent_id": "visual_agent_2"
+      }
+    ],
+    "overall_confidence": 0.82
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "batch_id": "batch_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5.0,
+        "confidence": 0.85,
+        "agent_id": "visual_agent_3"
+      }
+    ],
+    "overall_confidence": 0.85
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "batch_id": "batch_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5.5,
+        "confidence": 0.95,
+        "agent_id": "visual_agent_4"
+      }
+    ],
+    "overall_confidence": 0.95
+  },
+  {
+    "agent_id": "visual_agent_5",
+    "batch_id": "batch_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "operation": "new_body",
+        "geometry": {
+          "type": "Circle",
+          "diameter": 90
+        },
+        "distance": 5.0,
+        "confidence": 0.95,
+        "agent_id": "visual_agent_5"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5.0,
+        "confidence": 0.9,
+        "notes": "Parallel flat surface 1 - chord cutting circular perimeter",
+        "agent_id": "visual_agent_5"
+      },
+      {
+        "type": "Cut",
+        "operation": "remove",
+        "geometry": {
+          "type": "Rectangle",
+          "width": 90,
+          "height": 6
+        },
+        "distance": 5.0,
+        "confidence": 0.9,
+        "notes": "Parallel flat surface 2 - 78mm spacing, chord cutting circular perimeter",
+        "agent_id": "visual_agent_5"
+      }
+    ],
+    "overall_confidence": 0.93
+  }
+]

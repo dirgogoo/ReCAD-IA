@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-06_205742",
+  "status": "success",
+  "processing_time_seconds": 288.947805,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-06 at 16.36.07.mp4",
+    "size_mb": 8.645464897155762,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "cylinder_90x5",
+    "geometry_type": "multi_feature",
+    "dimensions": {},
+    "confidence": 0.924
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-06_205742\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-06_205742"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "part": {
+    "name": "Suporte em L com furo",
+    "material": "aluminum",
+    "units": "mm",
+
+    "metadata": {
+      "created_by": "video-interpreter",
+      "video_source": "support_bracket.mp4",
+      "timestamp": "2025-11-05T14:30:00Z",
+      "total_frames_analyzed": 180,
+      "analysis_duration": "30s"
+    },
+
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+
+    "features": [
+
+      {
+        "id": "feature_1",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {"type": "work_plane"},
+          "geometry": [
+            {
+              "type": "Rectangle",
+              "center": {"x": 0, "y": 0},
+              "width": {"value": 100, "unit": "mm"},
+              "height": {"value": 50, "unit": "mm"}
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {"value": 10, "unit": "mm"},
+          "direction": "normal",
+          "operation": "new_body"
+        },
+        "detection": {
+          "geometry_type": "Rectangle",
+          "geometry_confidence": 0.92,
+          "operation_type": "Extrude",
+          "operation_confidence": 0.95,
+          "frame_range": [5, 20]
+        }
+      },
+
+      {
+        "id": "feature_2",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {
+            "type": "face_reference",
+            "feature_id": "feature_1",
+            "face": "top"
+          },
+          "geometry": [
+            {
+              "type": "Rectangle",
+              "center": {"x": 0, "y": 0},
+              "width": {"value": 50, "unit": "mm"},
+              "height": {"value": 30, "unit": "mm"}
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {"value": 80, "unit": "mm"},
+          "direction": "normal",
+          "operation": "add"
+        },
+        "detection": {
+          "geometry_type": "Rectangle",
+          "geometry_confidence": 0.89,
+          "operation_type": "Extrude",
+          "operation_confidence": 0.91,
+          "frame_range": [25, 45]
+        }
+      },
+
+      {
+        "id": "feature_3",
+        "type": "Cut",
+        "sketch": {
+          "plane": {
+            "type": "face_reference",
+            "feature_id": "feature_2",
+            "face": "front"
+          },
+          "geometry": [
+            {
+              "type": "Circle",
+              "center": {"x": 0, "y": 40},
+              "diameter": {"value": 12, "unit": "mm"}
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {"value": 50, "unit": "mm"},
+          "direction": "normal",
+          "cut_type": "through_all"
+        },
+        "detection": {
+          "geometry_type": "Circle",
+          "geometry_confidence": 0.87,
+          "operation_type": "Cut",
+          "operation_confidence": 0.93,
+          "frame_range": [50, 70]
+        }
+      },
+
+      {
+        "id": "feature_4",
+        "type": "Fillet",
+        "parameters": {
+          "edges": {
+            "selection": "junction_edges",
+            "feature_ids": ["feature_1", "feature_2"]
+          },
+          "radius": {"value": 5, "unit": "mm"}
+        },
+        "detection": {
+          "operation_type": "Fillet",
+          "operation_confidence": 0.84,
+          "frame_range": [75, 90]
+        }
+      },
+
+      {
+        "id": "feature_5",
+        "type": "Chamfer",
+        "parameters": {
+          "edges": {
+            "selection": "top_edges",
+            "feature_id": "feature_2"
+          },
+          "distance": {"value": 2, "unit": "mm"},
+          "angle": {"value": 45, "unit": "deg"}
+        },
+        "detection": {
+          "operation_type": "Chamfer",
+          "operation_confidence": 0.81,
+          "frame_range": [95, 110]
+        }
+      }
+
+    ]
+  }
+}

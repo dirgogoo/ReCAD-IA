@@ -1,0 +1,393 @@
+"""
+Test suite for Claude Pattern Analyzer.
+
+Tests initialization, fallback behavior, prompt construction, and error handling.
+"""
+
+import json
+import pytest
+from unittest.mock import Mock, patch, MagicMock
+from patterns.claude_analyzer import ClaudePatternAnalyzer
+
+
+class TestClaudePatternAnalyzerInit:
+    """Test initialization scenarios."""
+
+    def test_init_with_api_key_provided(self):
+        """Test initialization with explicit API key."""
+        # Mock the Anthropic import at module level before it's imported
+        with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+            from anthropic import Anthropic
+            mock_anthropic = MagicMock()
+            with patch('anthropic.Anthropic', return_value=mock_anthropic):
+                analyzer = ClaudePatternAnalyzer(api_key="test-key-123")
+
+                assert analyzer.api_key == "test-key-123"
+                assert analyzer.client is not None
+
+    def test_init_with_env_var(self):
+        """Test initialization with API key from environment."""
+        with patch('patterns.claude_analyzer.os.getenv', return_value="env-key-456"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                from anthropic import Anthropic
+                mock_anthropic = MagicMock()
+                with patch('anthropic.Anthropic', return_value=mock_anthropic):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    assert analyzer.api_key == "env-key-456"
+                    assert analyzer.client is not None
+
+    def test_init_without_api_key(self):
+        """Test initialization without API key falls back gracefully."""
+        with patch('patterns.claude_analyzer.os.getenv', return_value=None):
+            analyzer = ClaudePatternAnalyzer()
+
+            assert analyzer.api_key is None
+            assert analyzer.client is None
+
+    def test_init_with_missing_anthropic_package(self):
+        """Test initialization when anthropic package is not installed."""
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            # Simulate ImportError when importing Anthropic
+            with patch.dict('sys.modules', {'anthropic': None}):
+                analyzer = ClaudePatternAnalyzer()
+
+                # Should handle gracefully
+                assert analyzer.api_key == "test-key"
+                assert analyzer.client is None
+
+    def test_init_with_client_error(self):
+        """Test initialization when Anthropic client fails to initialize."""
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', side_effect=Exception("Client init failed")):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    assert analyzer.api_key == "test-key"
+                    assert analyzer.client is None
+
+
+class TestClaudePatternAnalyzerFallback:
+    """Test fallback behavior when client is unavailable."""
+
+    def test_analyze_without_client_returns_fallback(self):
+        """Test analyze() returns fallback when client is None."""
+        with patch('patterns.claude_analyzer.os.getenv', return_value=None):
+            analyzer = ClaudePatternAnalyzer()
+
+            result = analyzer.analyze(
+                agent_results=[{"geometry": {"type": "Circle"}}],
+                transcription="test",
+                pattern_catalog=[]
+            )
+
+            assert result == {"fallback_to_python": True}
+
+    def test_analyze_with_api_error_returns_fallback(self):
+        """Test analyze() returns fallback when API call fails."""
+        mock_client = Mock()
+        mock_client.messages.create.side_effect = Exception("API error")
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    result = analyzer.analyze(
+                        agent_results=[{"geometry": {"type": "Circle"}}],
+                        transcription="test",
+                        pattern_catalog=[{"name": "chord_cut", "description": "Test"}]
+                    )
+
+                    assert result == {"fallback_to_python": True}
+
+
+class TestClaudePatternAnalyzerPromptConstruction:
+    """Test prompt building logic."""
+
+    def test_build_prompt_includes_pattern_catalog(self):
+        """Test prompt includes all patterns from catalog."""
+        analyzer = ClaudePatternAnalyzer(api_key="test-key")
+
+        pattern_catalog = [
+            {
+                "name": "chord_cut",
+                "priority": 1,
+                "description": "Two parallel flats on circular profile",
+                "indicators": {
+                    "visual": ["Circle geometry", "Cut operation"],
+                    "audio": ["flat", "78mm"],
+                    "features": ["extrude", "cut"]
+                }
+            },
+            {
+                "name": "counterbore",
+                "priority": 2,
+                "description": "Stepped hole",
+                "indicators": {
+                    "visual": ["Two Circle geometries"],
+                    "audio": ["counterbore", "step"],
+                    "features": ["cut"]
+                }
+            }
+        ]
+
+        prompt = analyzer._build_prompt(
+            agent_results=[],
+            transcription="test audio",
+            pattern_catalog=pattern_catalog
+        )
+
+        # Verify patterns are included
+        assert "chord_cut" in prompt
+        assert "Priority: 1" in prompt
+        assert "Two parallel flats on circular profile" in prompt
+        assert "counterbore" in prompt
+        assert "Priority: 2" in prompt
+
+        # Verify indicators are formatted
+        assert "Circle geometry" in prompt
+        assert "flat, 78mm" in prompt
+
+        # Verify audio transcription is included
+        assert "test audio" in prompt
+
+    def test_build_prompt_handles_no_transcription(self):
+        """Test prompt handles None transcription gracefully."""
+        analyzer = ClaudePatternAnalyzer(api_key="test-key")
+
+        prompt = analyzer._build_prompt(
+            agent_results=[],
+            transcription=None,
+            pattern_catalog=[]
+        )
+
+        assert "No transcription available" in prompt
+
+    def test_build_prompt_includes_agent_results(self):
+        """Test prompt includes agent results JSON."""
+        analyzer = ClaudePatternAnalyzer(api_key="test-key")
+
+        agent_results = [
+            {
+                "geometry": {"type": "Circle", "diameter": 90},
+                "confidence": 0.95
+            }
+        ]
+
+        prompt = analyzer._build_prompt(
+            agent_results=agent_results,
+            transcription="",
+            pattern_catalog=[]
+        )
+
+        # Verify agent results are formatted as JSON
+        assert '"type": "Circle"' in prompt
+        assert '"diameter": 90' in prompt
+
+
+class TestClaudePatternAnalyzerAnalysis:
+    """Test successful analysis scenarios."""
+
+    def test_analyze_returns_valid_pattern_detection(self):
+        """Test analyze() returns valid pattern detection result."""
+        # Mock response from Claude API
+        mock_response = Mock()
+        mock_content = Mock()
+        mock_content.text = json.dumps({
+            "pattern_detected": "chord_cut",
+            "confidence": 0.95,
+            "reasoning": "Found Circle geometry with audio mentioning 78mm flat",
+            "parameters": {"flat_to_flat": 78.0, "base_diameter": 90.0},
+            "fallback_to_python": False
+        })
+        mock_response.content = [mock_content]
+
+        mock_client = Mock()
+        mock_client.messages.create.return_value = mock_response
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    result = analyzer.analyze(
+                        agent_results=[{"geometry": {"type": "Circle", "diameter": 90}}],
+                        transcription="78mm flat to flat",
+                        pattern_catalog=[
+                            {
+                                "name": "chord_cut",
+                                "priority": 1,
+                                "description": "Test pattern",
+                                "indicators": {
+                                    "visual": ["Circle"],
+                                    "audio": ["flat"],
+                                    "features": ["extrude"]
+                                }
+                            }
+                        ]
+                    )
+
+                    # Verify result structure
+                    assert result["pattern_detected"] == "chord_cut"
+                    assert result["confidence"] == 0.95
+                    assert "reasoning" in result
+                    assert result["parameters"]["flat_to_flat"] == 78.0
+                    assert result["fallback_to_python"] is False
+
+    def test_analyze_handles_markdown_code_blocks(self):
+        """Test analyze() strips markdown code blocks from response."""
+        # Mock response with markdown code blocks
+        mock_response = Mock()
+        mock_content = Mock()
+        mock_content.text = """```json
+{
+  "pattern_detected": "chord_cut",
+  "confidence": 0.90,
+  "reasoning": "Test",
+  "parameters": {},
+  "fallback_to_python": false
+}
+```"""
+        mock_response.content = [mock_content]
+
+        mock_client = Mock()
+        mock_client.messages.create.return_value = mock_response
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    result = analyzer.analyze(
+                        agent_results=[],
+                        transcription="",
+                        pattern_catalog=[
+                            {
+                                "name": "test",
+                                "priority": 1,
+                                "description": "Test",
+                                "indicators": {"visual": [], "audio": [], "features": []}
+                            }
+                        ]
+                    )
+
+                    # Should successfully parse despite markdown wrapper
+                    assert result["pattern_detected"] == "chord_cut"
+                    assert result["confidence"] == 0.90
+
+    def test_analyze_requests_fallback_for_low_confidence(self):
+        """Test analyze() requests Python fallback when confidence is low."""
+        mock_response = Mock()
+        mock_content = Mock()
+        mock_content.text = json.dumps({
+            "pattern_detected": None,
+            "confidence": 0.3,
+            "reasoning": "Insufficient evidence",
+            "parameters": {},
+            "fallback_to_python": True
+        })
+        mock_response.content = [mock_content]
+
+        mock_client = Mock()
+        mock_client.messages.create.return_value = mock_response
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    result = analyzer.analyze(
+                        agent_results=[],
+                        transcription="",
+                        pattern_catalog=[
+                            {
+                                "name": "test",
+                                "priority": 1,
+                                "description": "Test",
+                                "indicators": {"visual": [], "audio": [], "features": []}
+                            }
+                        ]
+                    )
+
+                    assert result["fallback_to_python"] is True
+                    assert result["confidence"] == 0.3
+
+
+class TestClaudePatternAnalyzerErrorHandling:
+    """Test error handling scenarios."""
+
+    def test_analyze_handles_invalid_json_response(self):
+        """Test analyze() handles invalid JSON from API."""
+        mock_response = Mock()
+        mock_content = Mock()
+        mock_content.text = "This is not valid JSON"
+        mock_response.content = [mock_content]
+
+        mock_client = Mock()
+        mock_client.messages.create.return_value = mock_response
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    result = analyzer.analyze(
+                        agent_results=[],
+                        transcription="",
+                        pattern_catalog=[
+                            {
+                                "name": "test",
+                                "priority": 1,
+                                "description": "Test",
+                                "indicators": {"visual": [], "audio": [], "features": []}
+                            }
+                        ]
+                    )
+
+                    # Should fallback to Python on JSON parse error
+                    assert result == {"fallback_to_python": True}
+
+    def test_analyze_uses_correct_model_and_temperature(self):
+        """Test analyze() uses correct Claude model and temperature."""
+        mock_response = Mock()
+        mock_content = Mock()
+        mock_content.text = json.dumps({
+            "pattern_detected": None,
+            "confidence": 0.0,
+            "reasoning": "",
+            "parameters": {},
+            "fallback_to_python": True
+        })
+        mock_response.content = [mock_content]
+
+        mock_client = Mock()
+        mock_client.messages.create.return_value = mock_response
+
+        with patch('patterns.claude_analyzer.os.getenv', return_value="test-key"):
+            with patch.dict('sys.modules', {'anthropic': MagicMock()}):
+                with patch('anthropic.Anthropic', return_value=mock_client):
+                    analyzer = ClaudePatternAnalyzer()
+
+                    analyzer.analyze(
+                        agent_results=[],
+                        transcription="",
+                        pattern_catalog=[
+                            {
+                                "name": "test",
+                                "priority": 1,
+                                "description": "Test",
+                                "indicators": {"visual": [], "audio": [], "features": []}
+                            }
+                        ]
+                    )
+
+                    # Verify API call parameters
+                    call_args = mock_client.messages.create.call_args
+                    assert call_args[1]["model"] == "claude-sonnet-4-5-20250929"
+                    assert call_args[1]["temperature"] == 0.0
+                    assert call_args[1]["max_tokens"] == 2000
+
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])

@@ -1,0 +1,72 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Visual confirmation from caliper measurements in frames 1-2 and 9-10 showing 126mm dimensions, correlated with audio transcription stating 'Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura'. Square plate with equal width and height dimensions of 126mm and visible thickness of 5mm."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Visual caliper measurements showing 126mm x 126mm rectangular plate dimensions, correlated with audio transcription stating 'Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura' (Rectangular plate, side measurement, 126mm by 126mm, 5mm thickness)"
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Visual measurements from digital caliper showing dimensions across rectangular metal plate, correlated with audio transcription stating '126mm por 126mm, 5mm de espessura'. Caliper visible in frames 22-23, 27, 29-32 measuring the plate edges and thickness."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Visual measurements from caliper in frames 0033-0036 showing rectangular metal plate with consistent dimensions, correlated with audio transcription stating 'Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura' (Rectangular plate, side measurement, 126mm by 126mm, 5mm thickness). Frames 0037-0043 show handwritten notes and part documentation confirming the measurements."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 12,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "Visual caliper measurements in frames 44-45 showing rectangular metal plate, corroborated by audio transcription stating 'Chapa retangular, medida de lado, 126mm por 126mm, 5mm de espessura'. Frames 53-55 show clear top view of square plate confirming equal sides of 126mm."
+  }
+]

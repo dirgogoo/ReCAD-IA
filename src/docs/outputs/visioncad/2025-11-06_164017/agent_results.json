@@ -1,0 +1,67 @@
+[
+  {
+    "agent_id": "visual_agent_1",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "length": 28
+      }
+    },
+    "confidence": 0.88,
+    "notes": "Cylindrical disk clearly visible with caliper measurements. Diameter 90mm confirmed by audio and visual caliper scale. Height estimated at 28mm from side profile views showing relatively short disk thickness compared to diameter."
+  },
+  {
+    "agent_id": "visual_agent_2",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "length": 22
+      }
+    },
+    "confidence": 0.88,
+    "notes": "Cylindrical disk clearly visible with caliper measuring diameter. Thickness estimated at 22mm from side profile. Mitutoyo caliper provides visual scale reference. Part matches audio description of 90mm diameter disk."
+  },
+  {
+    "agent_id": "visual_agent_3",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "length": 25
+      }
+    },
+    "confidence": 0.90,
+    "notes": "Cylindrical disk clearly visible with Mitutoyo caliper measuring diameter at ~90mm. Height/thickness estimated at 25mm based on side profile view across multiple frames. Part appears to be a short disk/puck shape rather than tall cylinder."
+  },
+  {
+    "agent_id": "visual_agent_4",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "length": 27
+      }
+    },
+    "confidence": 0.88,
+    "notes": "Clear diameter measurement at 90mm visible on Mitutoyo caliper. Height estimated at ~27mm from side profile views showing disk thickness. Good visibility throughout frame range."
+  },
+  {
+    "agent_id": "visual_agent_5",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "length": 32
+      }
+    },
+    "confidence": 0.88,
+    "notes": "Clear views with Mitutoyo caliper visible. Diameter measurement at ~90mm confirmed. Height estimated at 32mm from side profile views. White cylindrical disk clearly visible throughout frame sequence."
+  }
+]

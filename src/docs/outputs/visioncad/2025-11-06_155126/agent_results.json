@@ -1,0 +1,77 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.98
+    },
+    "measurements_source": "caliper visual + audio correlation",
+    "notes": "Square metal plate with clean edges. Caliper measurements visible in frames 1-2 and 9-10 showing approximately 126mm dimensions. Plate appears to be aluminum or steel with oxidized/weathered surface. No holes, slots, chamfers, or fillets detected. Material shows uniform thickness throughout. Visual measurements correlate exactly with audio transcription (126mm x 126mm x 5mm)."
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.98
+    },
+    "measurements_source": "caliper visual + audio correlation",
+    "notes": "Square metal plate (126x126mm) with 5mm thickness. Caliper measurements visible in frames 11-16 showing width dimension across the plate. Material appears to be aluminum or steel with brushed/machined surface finish. No holes, slots, chamfers, or fillets observed - clean rectangular geometry with sharp corners. Plate shows some surface wear/marks consistent with handling. Frame 16 shows note '18x18' on paper (likely unrelated reference). Frames 17-21 show caliper being repositioned for verification measurements. Visual caliper readings confirm the 126mm dimension stated in audio transcription."
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.95
+    },
+    "measurements_source": "caliper visual + audio correlation",
+    "notes": "Square metal plate (126x126mm) with 5mm thickness confirmed. Caliper measurements visible in frames 22-23 and 30-32 showing dimensions. Plate appears to be clean/flat with no visible holes, slots, chamfers or fillets. Surface shows some minor wear/oxidation marks but geometry is simple rectangular profile. Visual measurements align perfectly with audio transcription stating '126mm x 126mm, 5mm de espessura'."
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 11,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.90
+    },
+    "measurements_source": "caliper visual + audio correlation",
+    "notes": "Rectangular metal plate measured with digital caliper. Frames 33-36 show clear caliper measurement of the plate edge. Frames 37-39 show close-up of caliper scale markings but are blurry. Frames 40-43 show general views of the plate. Visual measurements correlate with audio transcription stating 126mm x 126mm x 5mm thickness. No visible holes, slots, chamfers, or fillets observed in this batch. Clean rectangular geometry with sharp corners."
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 12,
+    "geometry": {
+      "type": "Rectangle",
+      "dimensions": {
+        "width": 126,
+        "height": 126,
+        "thickness": 5
+      },
+      "confidence": 0.90
+    },
+    "measurements_source": "caliper visual + audio correlation",
+    "notes": "Rectangular metal plate clearly visible in frames 44-45 and 51-55. Mitutoyo digital caliper shown measuring the part in frames 44-45. The plate appears to be a square (126mm x 126mm) based on audio transcription. Frames 46-50 are out of focus/blurred. Final frames (53-55) show the complete rectangular plate laid flat on dark surface, confirming square geometry. No visible holes, slots, or chamfers - appears to be a simple flat rectangular plate. Surface shows some wear/patina marks."
+  }
+]

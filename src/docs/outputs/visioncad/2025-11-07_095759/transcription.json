@@ -1,0 +1,15 @@
+{
+  "text": "Chapa de diâmetro 90mm Raio de 45mm e 2 linhas a distância de 78mm",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.0,
+      "text": " Chapa de diâmetro 90mm"
+    },
+    {
+      "start": 30.0,
+      "end": 50.0,
+      "text": " Raio de 45mm e 2 linhas a distância de 78mm"
+    }
+  ]
+}

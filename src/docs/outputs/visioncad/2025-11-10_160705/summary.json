@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-10_160705",
+  "status": "success",
+  "processing_time_seconds": 592.118082,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-10 at 15.19.13.mp4",
+    "size_mb": 11.556469917297363,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "flange_75mm_3hole_counterbore",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-10_160705\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-10_160705"
+  }
+}

@@ -1,0 +1,620 @@
+[
+  {
+    "agent_id": "agent_0",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": [
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": -60.1,
+            "end_angle": 60.1
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": 22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            },
+            "end": {
+              "x": -22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            }
+          },
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": 119.9,
+            "end_angle": -119.9
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": -22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            },
+            "end": {
+              "x": 22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "type": "Coincident",
+            "geo1": 0,
+            "point1": 2,
+            "geo2": 1,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 1,
+            "point1": 2,
+            "geo2": 2,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 2,
+            "point1": 2,
+            "geo2": 3,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 3,
+            "point1": 2,
+            "geo2": 0,
+            "point2": 1
+          },
+          {
+            "type": "Parallel",
+            "geo1": 1,
+            "geo2": 3
+          },
+          {
+            "type": "Horizontal",
+            "geo1": 1
+          },
+          {
+            "type": "Distance",
+            "geo1": 1,
+            "point1": 1,
+            "geo2": 3,
+            "point2": 1,
+            "value": 78.0
+          }
+        ],
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.92
+      }
+    ],
+    "overall_confidence": 0.92,
+    "detection": {
+      "pattern": "chord_cut",
+      "confidence": 0.92,
+      "frame_number": 5
+    },
+    "audio_measurements": [
+      {
+        "parameter": "diameter",
+        "value": 90.0,
+        "unit": "mm",
+        "timestamp": 12.0,
+        "transcript": "di\u00e2metro 90mm"
+      },
+      {
+        "parameter": "radius",
+        "value": 45.0,
+        "unit": "mm",
+        "timestamp": 35.0,
+        "transcript": "Raio de 45mm"
+      },
+      {
+        "parameter": "flat_to_flat",
+        "value": 78.0,
+        "unit": "mm",
+        "timestamp": 40.0,
+        "transcript": "2 linhas a dist\u00e2ncia de 78mm"
+      }
+    ]
+  },
+  {
+    "agent_id": "agent_1",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": [
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": -60.1,
+            "end_angle": 60.1
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": 22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            },
+            "end": {
+              "x": -22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            }
+          },
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": 119.9,
+            "end_angle": -119.9
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": -22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            },
+            "end": {
+              "x": 22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "type": "Coincident",
+            "geo1": 0,
+            "point1": 2,
+            "geo2": 1,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 1,
+            "point1": 2,
+            "geo2": 2,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 2,
+            "point1": 2,
+            "geo2": 3,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 3,
+            "point1": 2,
+            "geo2": 0,
+            "point2": 1
+          },
+          {
+            "type": "Parallel",
+            "geo1": 1,
+            "geo2": 3
+          },
+          {
+            "type": "Horizontal",
+            "geo1": 1
+          },
+          {
+            "type": "Distance",
+            "geo1": 1,
+            "point1": 1,
+            "geo2": 3,
+            "point2": 1,
+            "value": 78.0
+          }
+        ],
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.9
+      }
+    ],
+    "overall_confidence": 0.9,
+    "detection": {
+      "pattern": "chord_cut",
+      "confidence": 0.9,
+      "frame_number": 22
+    }
+  },
+  {
+    "agent_id": "agent_2",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": [
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": -60.1,
+            "end_angle": 60.1
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": 22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            },
+            "end": {
+              "x": -22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            }
+          },
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": 119.9,
+            "end_angle": -119.9
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": -22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            },
+            "end": {
+              "x": 22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "type": "Coincident",
+            "geo1": 0,
+            "point1": 2,
+            "geo2": 1,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 1,
+            "point1": 2,
+            "geo2": 2,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 2,
+            "point1": 2,
+            "geo2": 3,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 3,
+            "point1": 2,
+            "geo2": 0,
+            "point2": 1
+          },
+          {
+            "type": "Parallel",
+            "geo1": 1,
+            "geo2": 3
+          },
+          {
+            "type": "Horizontal",
+            "geo1": 1
+          },
+          {
+            "type": "Distance",
+            "geo1": 1,
+            "point1": 1,
+            "geo2": 3,
+            "point2": 1,
+            "value": 78.0
+          }
+        ],
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.93
+      }
+    ],
+    "overall_confidence": 0.93,
+    "detection": {
+      "pattern": "chord_cut",
+      "confidence": 0.93,
+      "frame_number": 38
+    }
+  },
+  {
+    "agent_id": "agent_3",
+    "frames_analyzed": 18,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": [
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": -60.1,
+            "end_angle": 60.1
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": 22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            },
+            "end": {
+              "x": -22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            }
+          },
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": 119.9,
+            "end_angle": -119.9
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": -22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            },
+            "end": {
+              "x": 22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "type": "Coincident",
+            "geo1": 0,
+            "point1": 2,
+            "geo2": 1,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 1,
+            "point1": 2,
+            "geo2": 2,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 2,
+            "point1": 2,
+            "geo2": 3,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 3,
+            "point1": 2,
+            "geo2": 0,
+            "point2": 1
+          },
+          {
+            "type": "Parallel",
+            "geo1": 1,
+            "geo2": 3
+          },
+          {
+            "type": "Horizontal",
+            "geo1": 1
+          },
+          {
+            "type": "Distance",
+            "geo1": 1,
+            "point1": 1,
+            "geo2": 3,
+            "point2": 1,
+            "value": 78.0
+          }
+        ],
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.91
+      }
+    ],
+    "overall_confidence": 0.91,
+    "detection": {
+      "pattern": "chord_cut",
+      "confidence": 0.91,
+      "frame_number": 55
+    }
+  },
+  {
+    "agent_id": "agent_4",
+    "frames_analyzed": 17,
+    "features": [
+      {
+        "type": "Extrude",
+        "geometry": [
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": -60.1,
+            "end_angle": 60.1
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": 22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            },
+            "end": {
+              "x": -22.44994432064365,
+              "y": 39.0,
+              "z": 0
+            }
+          },
+          {
+            "type": "Arc",
+            "center": {
+              "x": 0,
+              "y": 0
+            },
+            "radius": {
+              "value": 45.0,
+              "unit": "mm"
+            },
+            "start_angle": 119.9,
+            "end_angle": -119.9
+          },
+          {
+            "type": "Line",
+            "start": {
+              "x": -22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            },
+            "end": {
+              "x": 22.44994432064365,
+              "y": -39.0,
+              "z": 0
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "type": "Coincident",
+            "geo1": 0,
+            "point1": 2,
+            "geo2": 1,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 1,
+            "point1": 2,
+            "geo2": 2,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 2,
+            "point1": 2,
+            "geo2": 3,
+            "point2": 1
+          },
+          {
+            "type": "Coincident",
+            "geo1": 3,
+            "point1": 2,
+            "geo2": 0,
+            "point2": 1
+          },
+          {
+            "type": "Parallel",
+            "geo1": 1,
+            "geo2": 3
+          },
+          {
+            "type": "Horizontal",
+            "geo1": 1
+          },
+          {
+            "type": "Distance",
+            "geo1": 1,
+            "point1": 1,
+            "geo2": 3,
+            "point2": 1,
+            "value": 78.0
+          }
+        ],
+        "distance": 6.5,
+        "operation": "new_body",
+        "confidence": 0.89
+      }
+    ],
+    "overall_confidence": 0.89,
+    "detection": {
+      "pattern": "chord_cut",
+      "confidence": 0.89,
+      "frame_number": 72
+    }
+  }
+]

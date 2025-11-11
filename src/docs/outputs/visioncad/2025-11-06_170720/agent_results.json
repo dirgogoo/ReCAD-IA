@@ -1,0 +1,110 @@
+[
+  {
+    "batch_id": "batch_0",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5.5
+      },
+      "features": [
+        {
+          "type": "fillet",
+          "position": "all_edges",
+          "radius": 2.5
+        },
+        {
+          "type": "reference_line_pair",
+          "distance": 78,
+          "orientation": "diameter"
+        }
+      ]
+    },
+    "confidence": 0.92
+  },
+  {
+    "batch_id": "batch_1",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      },
+      "features": [
+        {
+          "type": "surface_marking",
+          "description": "Two lines at 78mm distance",
+          "position": [0, 0]
+        }
+      ]
+    },
+    "confidence": 0.85
+  },
+  {
+    "batch_id": "batch_2",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      },
+      "features": [
+        {
+          "type": "reference_lines",
+          "description": "2 parallel lines",
+          "distance_between": 78
+        }
+      ]
+    },
+    "confidence": 0.92
+  },
+  {
+    "batch_id": "batch_3",
+    "frames_analyzed": 18,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 5
+      },
+      "features": [
+        {
+          "type": "reference_lines",
+          "count": 2,
+          "spacing": 78
+        }
+      ]
+    },
+    "confidence": 0.92
+  },
+  {
+    "batch_id": "batch_4",
+    "frames_analyzed": 17,
+    "geometry": {
+      "type": "Circle",
+      "dimensions": {
+        "diameter": 90,
+        "radius": 45,
+        "thickness": 12
+      },
+      "features": [
+        {
+          "type": "top_surface",
+          "description": "Circular face with rounded edges"
+        },
+        {
+          "type": "edge_finish",
+          "description": "Rounded or beveled edges"
+        }
+      ]
+    },
+    "confidence": 0.92
+  }
+]

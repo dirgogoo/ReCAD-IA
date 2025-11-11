@@ -1,0 +1,128 @@
+{
+  "status": "pending",
+  "task": "analyze_and_generate_partbuilder_code",
+  "agent_results": [
+    {
+      "agent_id": "enhanced_agent_1",
+      "frames_analyzed": 17,
+      "features": [
+        {
+          "type": "Extrude",
+          "geometry": [
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": -60.1,
+              "end_angle": 60.1
+            },
+            {
+              "type": "Line",
+              "start": {
+                "x": 22.45,
+                "y": 39.0,
+                "z": 0
+              },
+              "end": {
+                "x": -22.45,
+                "y": 39.0,
+                "z": 0
+              }
+            },
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": 119.9,
+              "end_angle": -119.9
+            },
+            {
+              "type": "Line",
+              "start": {
+                "x": -22.45,
+                "y": -39.0,
+                "z": 0
+              },
+              "end": {
+                "x": 22.45,
+                "y": -39.0,
+                "z": 0
+              }
+            }
+          ],
+          "constraints": [
+            {
+              "type": "Coincident",
+              "geo1": 0,
+              "point1": 2,
+              "geo2": 1,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 1,
+              "point1": 2,
+              "geo2": 2,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 2,
+              "point1": 2,
+              "geo2": 3,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 3,
+              "point1": 2,
+              "geo2": 0,
+              "point2": 1
+            },
+            {
+              "type": "Parallel",
+              "geo1": 1,
+              "geo2": 3
+            },
+            {
+              "type": "Horizontal",
+              "geo1": 1
+            },
+            {
+              "type": "Distance",
+              "geo1": 1,
+              "point1": 1,
+              "geo2": 3,
+              "point2": 1,
+              "value": 78.0
+            }
+          ],
+          "distance": 6.5,
+          "operation": "new_body",
+          "confidence": 0.95
+        }
+      ],
+      "overall_confidence": 0.95,
+      "detection": {
+        "pattern": "chord_cut",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "transcription": null,
+  "output_file": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\tests\\temp\\integration_test_output\\2025-11-07_092520\\claude_analysis.py",
+  "instructions_file": "C:\\Users\\conta\\.claude\\skills\\recad\\src\\patterns\\claude_analyzer.py",
+  "instructions_summary": "READ the instructions_file for complete details!\nThat file contains:\n  - Analysis steps\n  - PartBuilder API examples\n  - Critical rules (import from semantic_builder!)\n  - Example code with correct sys.path (5 parents)\n"
+}

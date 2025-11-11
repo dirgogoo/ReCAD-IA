@@ -1,0 +1,20 @@
+{
+  "session_id": "2025-11-10_152048",
+  "status": "success",
+  "processing_time_seconds": 867.425929,
+  "video": {
+    "path": "C:\\Users\\conta\\Downloads\\WhatsApp Video 2025-11-10 at 15.19.13.mp4",
+    "size_mb": 11.556469917297363,
+    "frames_analyzed": 0
+  },
+  "part": {
+    "name": "Circular_Flange_75mm",
+    "geometry_type": null,
+    "dimensions": null,
+    "confidence": 0.95
+  },
+  "outputs": {
+    "semantic_json": "docs\\outputs\\visioncad\\2025-11-10_152048\\semantic.json",
+    "session_dir": "docs\\outputs\\visioncad\\2025-11-10_152048"
+  }
+}

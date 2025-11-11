@@ -1,0 +1,15 @@
+{
+  "text": "espaçador BTP, diâmetro externo de 75 milímetros, diâmetro interno de 30 milímetros, espessura espessura é de 12 milímetros",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 20.0,
+      "text": " espaçador BTP, diâmetro externo de 75 milímetros, diâmetro interno de 30 milímetros, espessura"
+    },
+    {
+      "start": 30.0,
+      "end": 34.0,
+      "text": " espessura é de 12 milímetros"
+    }
+  ]
+}

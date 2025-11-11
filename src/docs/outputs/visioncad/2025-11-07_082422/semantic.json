@@ -1,0 +1,135 @@
+{
+  "part": {
+    "name": "chapa_circle_90mm",
+    "units": "mm",
+    "work_plane": {
+      "type": "primitive",
+      "face": "frontal"
+    },
+    "features": [
+      {
+        "id": "chord_cut_extrusion",
+        "type": "Extrude",
+        "sketch": {
+          "plane": {
+            "type": "work_plane"
+          },
+          "geometry": [
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": -60.1,
+              "end_angle": 60.1
+            },
+            {
+              "type": "Line",
+              "start": {
+                "x": 22.44994432064365,
+                "y": 39.0,
+                "z": 0
+              },
+              "end": {
+                "x": -22.44994432064365,
+                "y": 39.0,
+                "z": 0
+              }
+            },
+            {
+              "type": "Arc",
+              "center": {
+                "x": 0,
+                "y": 0
+              },
+              "radius": {
+                "value": 45.0,
+                "unit": "mm"
+              },
+              "start_angle": 119.9,
+              "end_angle": -119.9
+            },
+            {
+              "type": "Line",
+              "start": {
+                "x": -22.44994432064365,
+                "y": -39.0,
+                "z": 0
+              },
+              "end": {
+                "x": 22.44994432064365,
+                "y": -39.0,
+                "z": 0
+              }
+            }
+          ],
+          "constraints": [
+            {
+              "type": "Coincident",
+              "geo1": 0,
+              "point1": 2,
+              "geo2": 1,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 1,
+              "point1": 2,
+              "geo2": 2,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 2,
+              "point1": 2,
+              "geo2": 3,
+              "point2": 1
+            },
+            {
+              "type": "Coincident",
+              "geo1": 3,
+              "point1": 2,
+              "geo2": 0,
+              "point2": 1
+            },
+            {
+              "type": "Parallel",
+              "geo1": 1,
+              "geo2": 3
+            },
+            {
+              "type": "Horizontal",
+              "geo1": 1
+            },
+            {
+              "type": "Distance",
+              "geo1": 1,
+              "point1": 1,
+              "geo2": 3,
+              "point2": 2,
+              "value": 78.0
+            }
+          ]
+        },
+        "parameters": {
+          "distance": {
+            "value": 27.0,
+            "unit": "mm"
+          },
+          "direction": "normal",
+          "operation": "new_body"
+        }
+      }
+    ],
+    "metadata": {
+      "source": "visioncad",
+      "timestamp": "2025-11-07T08:25:10.227422",
+      "version": "1.0.0"
+    }
+  }
+}
