@@ -7,6 +7,7 @@ This module defines the abstract interface that all pattern detectors must imple
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
+import math
 
 
 @dataclass
@@ -155,6 +156,91 @@ class GeometricPattern(ABC):
             }
         """
         pass
+
+    # === Protected Helper Methods (shared across patterns) ===
+
+    def _extract_value(self, obj: Any) -> Optional[float]:
+        """
+        Extract numeric value from dict or return as-is.
+
+        Handles both direct values and dict format: {"value": X, "unit": "mm"}
+
+        Args:
+            obj: Value to extract (can be float, dict, or None)
+
+        Returns:
+            Extracted float value or None
+
+        Examples:
+            >>> self._extract_value(10.5)
+            10.5
+            >>> self._extract_value({"value": 10.5, "unit": "mm"})
+            10.5
+            >>> self._extract_value(None)
+            None
+        """
+        if obj is None:
+            return None
+        if isinstance(obj, dict):
+            return obj.get("value")
+        return float(obj)
+
+    def _extract_center(self, feature: Dict) -> tuple:
+        """
+        Extract center coordinates from feature geometry.
+
+        Args:
+            feature: Feature dict with geometry.center = {x: X, y: Y}
+
+        Returns:
+            Tuple (x, y) with default (0, 0) if not found
+
+        Example:
+            >>> feature = {"geometry": {"center": {"x": 10, "y": 20}}}
+            >>> self._extract_center(feature)
+            (10, 20)
+        """
+        center_obj = feature.get("geometry", {}).get("center", {"x": 0, "y": 0})
+        return (center_obj.get("x", 0), center_obj.get("y", 0))
+
+    def _distance(self, p1: tuple, p2: tuple) -> float:
+        """
+        Calculate Euclidean distance between two 2D points.
+
+        Args:
+            p1: First point (x, y)
+            p2: Second point (x, y)
+
+        Returns:
+            Distance in same units as input coordinates
+
+        Example:
+            >>> self._distance((0, 0), (3, 4))
+            5.0
+        """
+        return math.sqrt((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)
+
+    def _extract_depth(self, feature: Dict) -> Optional[float]:
+        """
+        Extract depth from Cut feature parameters.
+
+        Handles both "depth" (for chamfer) and "distance" (for circle cuts).
+
+        Args:
+            feature: Feature dict with parameters.depth or parameters.distance
+
+        Returns:
+            Extracted depth value or None
+
+        Example:
+            >>> feature = {"parameters": {"distance": {"value": 10}}}
+            >>> self._extract_depth(feature)
+            10.0
+        """
+        params = feature.get("parameters", {})
+        # Could be "depth" (for chamfer) or "distance" (for circle)
+        depth = params.get("depth") or params.get("distance")
+        return self._extract_value(depth)
 
 
 # Pattern-specific measurement requirements

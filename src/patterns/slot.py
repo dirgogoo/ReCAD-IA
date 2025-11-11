@@ -190,14 +190,6 @@ class SlotPattern(GeometricPattern):
             return False
         return True
 
-    def _extract_value(self, obj: Any) -> Optional[float]:
-        """Extract numeric value from dict or return as-is."""
-        if obj is None:
-            return None
-        if isinstance(obj, dict):
-            return obj.get("value")
-        return float(obj) if obj is not None else None
-
     def _has_slot_cues(self, transcription: str) -> bool:
         """Check if audio mentions slot."""
         keywords = [
