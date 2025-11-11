@@ -3,9 +3,20 @@ ReCAD Configuration
 Contains API keys and settings for the ReCAD skill.
 """
 
-# OpenAI API Key for Whisper transcription
-# Set via environment variable: export OPENAI_API_KEY="your-key-here"
 import os
+from pathlib import Path
+
+# Load .env file if it exists
+env_file = Path(__file__).parent.parent / ".env"
+if env_file.exists():
+    with open(env_file) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, value = line.split("=", 1)
+                os.environ[key.strip()] = value.strip()
+
+# OpenAI API Key for Whisper transcription
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 
 # FreeCAD Installation Path
